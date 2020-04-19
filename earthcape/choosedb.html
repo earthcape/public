@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Choose database at logon screen | EarthCape Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Choose database at logon screen | EarthCape Documentation ">
+    <meta name="generator" content="docfx 2.40.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="choose-database-at-logon-screen">Choose database at logon screen</h3>
+
+<p>By default, both web.config (EarthCape Web Client) and EarthCape.Win.exe.config (EarthCape Win Client) require a connection string as described in the <a href="install.html">installation topic</a>.</p>
+<p>In situations where several databases are managed, it is possible to provided a drop down selector with a list of database names and their respective connection string specified in the config.</p>
+<p>In order to enable this mode, 2 steps are required:</p>
+<p>First, enable &quot;ChooseDatabaseAtLogon&quot; mode by turning the corresponding option on in Model.xafml file in the root folder.</p>
+<pre><code>&lt;Application&gt;
+ ...
+  &lt;Options ChooseDatabaseAtLogon=&quot;True&quot;/&gt;
+ ...
+</code></pre><p>Second, add &quot;LogonDBServerXXXX&quot; entries to the config where XXXX is a label that will appear in the drop down.</p>
+<p>For example:</p>
+<pre><code>&lt;connectionStrings&gt;
+&lt;add name=&quot;ConnectionString&quot; connectionString=&quot;&quot;/&gt;
+&lt;add name=&quot;LogonDBServerLocalSQLite&quot; connectionString=&quot;XpoProvider=SQLite;Data Source=c:\ProgramData\EarthCape\EarthCape.db3&quot; /&gt;
+&lt;add name=&quot;LogonDBServerLocalSQLiteFieldWorkLaptop1&quot; connectionString=&quot;XpoProvider=SQLite;Data Source=c:\ProgramData\EarthCape\EarthCapeComp1.db3&quot; /&gt;
+&lt;add name=&quot;LogonDBServerLocalSQLiteFieldWorkLaptop2&quot; connectionString=&quot;XpoProvider=SQLite;Data Source=c:\ProgramData\EarthCape\EarthCapeComp2.db3&quot; /&gt;
+   &lt;add name=&quot;LogonDBServerMainDB&quot; connectionString=&quot;Integrated Security=SSPI;Pooling=false;Data Source=.\sqlexpress;Initial Catalog=MainDB&quot;/&gt; 
+ &lt;/connectionStrings&gt;
+</code></pre><p><strong>NOTE</strong>: <em>make sure you keep one &quot;ConnectionString&quot; entry along side others</em>.</p>
+<p>This will add additional DBServer drop down to login form:</p>
+<p><img src="images/appmodel_choosedb.png" alt=""></p>
+<p>where the list is populated from the config:</p>
+<p><img src="images/appmodel_choosedb1.png" alt=""></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2006-2018 EarthCape OY. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

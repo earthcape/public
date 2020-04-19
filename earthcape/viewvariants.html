@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>View variants | EarthCape Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="View variants | EarthCape Documentation ">
+    <meta name="generator" content="docfx 2.40.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="view-variants">View variants</h3>
+
+<p>You may wish to provide several customized variants of the same View, and allow an user to choose the desired View Variant at runtime. For instance, users may need to use different List View column sets and Detail View layouts in different scenarios.</p>
+<p>EarthCape Windows Client:
+<img src="images/appmodel_viewvariants1.png" alt=""></p>
+<p>EarthCape Web Client:
+<img src="images/appmodel_viewvariants2.png" alt=""></p>
+<p>They may also need to use two List View modes: a single List View and a List View with a Detail View (see <a href="appmodel_masterdetail.md">MasterDetailMode</a>). This topic will show you how to use this module to provide multiple versions of the same View. </p>
+<p>To add View Variants, do the following:</p>
+<p>Define a new View for the required object type in the <a href="AppModel.html">Application Model</a>. To do this, add a new ListView or DetailView node to the Views node, and specify its ModelClass and Id properties. In the node&#39;s context menu, choose Generate content and specify the required settings (column set, layout, etc.). </p>
+<p>Repeat this step to add as many Views as required.</p>
+<p>Define a new View that will represent the varied List View or Detail View for the required object type. Give it a meaningful ID to distinguish it from other Views of this object type. This View node will store view variants. Right-click it and select Add... | Variants. The Variants child node will be added.</p>
+<p>Invoke the context menu for the Variants node and select the Add/Variant menu item.</p>
+<p>Specify the newly added node&#39;s Caption and Id properties. Specify the Id property by selecting View from the drop-down list. Note that the View will be present in this drop-down list if its ModelClass property has the same value as the current View. Additionally, you can specify the Index property to set a custom sort order for variants. Repeat this step to add all newly created Views and the default View.</p>
+<p>Specify the Current property of the Variants node by selecting a variant ID from the drop-down list. This variant will be used by default.
+Set the required object&#39;s DefaultListView property to the Id of the varied View. Alternatively, you can change the View property of a specific NavigationItem node or DetailView of a specific ListView node, to specify the varied view instead of the default view.</p>
+<p>The following image illustrates how the varied View and its View Variants are organized in the Application Model.</p>
+<p><img src="images/appmodel_viewvariants3.png" alt=""></p>
+<p>A variant can be chosen from the drop-down list. Variants are sorted according to their Index property values. The previously selected variant ID is stored with user customizations.</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2006-2018 EarthCape OY. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

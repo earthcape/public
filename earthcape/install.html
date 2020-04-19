@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Installation | EarthCape Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Installation | EarthCape Documentation ">
+    <meta name="generator" content="docfx 2.40.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="installation">Installation</h3>
+
+<p><a href="sys.html">System requirements</a></p>
+<h4 id="windows-client">Windows Client</h4>
+<p>EarthCape Windows Client is shipped with MSI (Microsoft Installer) that normally requires administrator rights to install.</p>
+<p>Contact your IT administration for instructions how to install it in case you do not have administrator account.</p>
+<h4 id="web-client">Web Client</h4>
+<p>EarthCape Web Client is an ASP.NET based web application and requires a Web Server (IIS) to be hosted on.</p>
+<h4 id="database-connection">Database connection</h4>
+<p>NOTE: if you are not administering the database yourself, contact your database or system administrator about your database options, login credentials and host address.</p>
+<p>EarthCape Windows Client default configuration will create SQLite database in user&#39;s C:\ProgramData\EarthCape folder.</p>
+<p>Default Admin user is created with empty password and set by the user upon first login.</p>
+<p>Database connection parameters are located in <em>EarthCape.Win.exe.config</em> and <em>web.config</em> files for windows and web clients respectively.</p>
+<p>Connection string can be modified to connect to one of the <a href="databases.html">supported database engines</a>.</p>
+<p>Example connection strings:</p>
+<ul>
+<li>localhost: your host address</li>
+<li>db_user: your database username</li>
+<li>db_password: your database login password</li>
+</ul>
+<p>MySQL:</p>
+<pre><code>&lt;add name=&quot;ConnectionString&quot; connectionString=&quot;XpoProvider=MySql;Server=localhost;Database=ec_database;User Id=db_user;password=db_password;persist security info=true&quot;/&gt;
+</code></pre><p>SQLite:</p>
+<pre><code>&lt;add name=&quot;ConnectionString&quot; connectionString=&quot;Data Source=c:\earthcape.db3;Version=3;&quot; providerName=&quot;System.Data.SQLite&quot; /&gt;
+</code></pre><p>MS SQL Server connection, Windows authentication:</p>
+<pre><code>&lt;add name=&quot;ConnectionString&quot; connectionString=&quot;Integrated Security=SSPI;Pooling=false;Data Source=;Initial Catalog=earthcape&quot;/&gt;
+</code></pre><p>MS SQL Server connection, SQL server authentication:</p>
+<pre><code>&lt;add name=&quot;ConnectionString&quot; connectionString=&quot;User Id=db_user;password=;Data Source=db_password;Initial Catalog=earthcape&quot;/&gt;
+</code></pre><p>If permissions allow a new database will be created on the server upon first connection.
+Admin user is created with an empty password and prompted to set a password on first login.</p>
+<h4 id="error-logging">Error logging</h4>
+<ul>
+<li>Locate configuration files for respective applications (EarthCape.Win.exe.config for Windows Client in the installation target folder or Web.config for Web Client)</li>
+<li>Make sure key &quot;TraceLogLocation&quot; has value &quot;ApplicationFolder&quot;</li>
+<li>Change switch &quot;eXpressAppFramework&quot; value from &quot;0&quot; to &quot;1&quot;</li>
+<li>After encountering an error, send file eXpressAppFramework.log to <a href="https://earthcape.com/support">support</a> along with the description of the error and screen shots before the error occurs and of the application screen including the error.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2006-2018 EarthCape OY. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

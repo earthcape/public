@@ -1,0 +1,136 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>EarthCape Customization (via Application Model) | EarthCape Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="EarthCape Customization (via Application Model) | EarthCape Documentation ">
+    <meta name="generator" content="docfx 2.40.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="earthcape-customization-via-application-model">EarthCape Customization (via Application Model)</h3>
+
+<p>EarthCape uses a special XML-based content that stores structured information about the user interface in the database - Application Model. See how the Application Model information is collected, and how you can use it to customize the default UI.</p>
+<p><strong>WARNING</strong>: <em>working with application model requires deep knowledge of EarthCape internal structure and certain changes may lead to inferior performance or malfunctioning.</em></p>
+<p>EarthCape provides advanced administration tools to control much of the application structure and functionality.</p>
+<h4 id="application-model-overview">Application Model Overview</h4>
+<p>When you run a Windows or Web client, the Application Model is used to create UI elements. For instance, when a table (list view) that displays a list of Locality objects is shown, information for each column&#39;s visibility, location, caption and other settings is taken from the Application Model. The Application Model provides details on object types, commands, editors and other elements that provide or influence application functionality.</p>
+<p>The Application Model information is generally represented by a tree. Tree nodes normally have a set of properties that actually specify the Application Model data. By default, the Application Model is organized in the following way: the root node (Application) and several child nodes (ActionDesign, BOModel, CreatableItems, ImageSources, <a href="appmodel_navcontrol.html">NavigationItems</a>, ViewItems, <a href="views.html">Views</a>, etc.).</p>
+<h4 id="application-model-customization">Application Model Customization</h4>
+<p>Go to <strong>Settings/App model</strong>.
+(or for quick personal customizations - Tools/Edit Model)</p>
+<p><img src="images/appmodellist.png" alt=""></p>
+<p>Each record corresponds to a layer of changes that is applied in specified order when application is run.
+<em>Difference Type</em> column specifies if a model contains changes that are user specific (Difference Type=User) or application wide (Difference Type=Model). Both groups are subdivided to web and win client (Persistent Application column) and Device Category (All, Desktop, Mobile, Tablet).</p>
+<p>For instance, to modify model settings for the all users that access the database via Windows client, you need to open a record that has Persistent Application=EarthCape Windows Client and Device Category=All. Respectively, if you need to apply customizations for the web interface for the small screen, you need to open a record that has Persistent Application=EarthCape Web Client and Device Category=Mobile.</p>
+<p><img src="images/appmodel.png" alt=""></p>
+<p>Looking through the nodes (to the left) and their properties (to the right), you can see that most data has already been generated. For instance, the BOModel node provides information on all the object types that belong to EarthCape and other referenced modules.</p>
+<p>The changes you make in the Model Editor are saved to the target Application Model</p>
+<p>Note. You can customize the Application Model, either directly via the Model Editor or indirectly - by modifying the layout, changing the skin, etc. End-user customizations are stored in the user&#39;s model record in a database. </p>
+<h4 id="application-models-layered-structure">Application Model&#39;s Layered Structure</h4>
+<p>While customizing the Application Model in different places of your application, you should be aware of the order in which the Model is generated. Internally, the Application Model has a layered structure.</p>
+<p>At its base, there is the zero layer. The generation of this layer is based on the code of the application&#39;s referenced modules.
+Higher, there are layers for each module of the application. 
+Then, there is a layer for the application model (separately for Windows and Web clients).
+At the top is the layer with end-user customizations.</p>
+<h4 id="main-concepts">Main Concepts</h4>
+<ul>
+<li>Business Objects (BOModel)</li>
+<li><a href="appmodel_navcontrol.html">Navigation</a> (NavigationItems)</li>
+<li><a href="views.html">Views</a></li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2006-2018 EarthCape OY. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Mapping (Web Client) | EarthCape Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Mapping (Web Client) | EarthCape Documentation ">
+    <meta name="generator" content="docfx 2.40.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="mapping-web-client">Mapping (Web Client)</h3>
+
+<p>GIS module is only available <a href="gis_win.html">on the Win client side</a> of EarthCape platform. Here we will examine how to configure mapping on Web Client.</p>
+<p><a href="AppModel.html">Model configuration</a> allows for choosing between Google and Bing maps.</p>
+<p><em>Get current position</em> command set values for Latitude and Longitude fields.</p>
+<h4 id="web-mapping-compatible-data-types">Web mapping compatible data types:</h4>
+<ul>
+<li><a href="../application/Locality.html">Locality</a></li>
+<li><a href="../application/LocalityVisit.html">Locality Visit</a></li>
+<li><a href="../application/Unit.html">Unit</a></li>
+<li><a href="../application/Project.html">Project</a></li>
+</ul>
+<h4 id="required-fields">Required Fields</h4>
+<ul>
+<li>Latitude</li>
+<li>Longitude</li>
+</ul>
+<h4 id="model-configuration">Model Configuration</h4>
+<p>Web <a href="AppModel.html">Application Model</a> needs to be customized according to your setup.</p>
+<p><a href="appmodel_createview.html">Create a list view</a> that displays a collection of objects of compatible data types (list above). E.g. &quot;Locality_ListView_Map&quot;.</p>
+<p>Set list view editor type to &quot;DevExpress.ExpressApp.Maps.Web.WebMapsListEditor&quot;</p>
+<div style="position: relative; padding-bottom: 67.16417910447761%; height: 0;"><iframe src="https://www.loom.com/embed/8de212c7417946a892c96fd3ec176db4" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+
+<p>Next, <a href="appmodel_navcontrol.html">Add a list view navigation item</a> and save the model record.</p>
+<p>The result would be a web map similar to this (needs re-login):</p>
+<p><a href="https://earthcape.com/wp-content/uploads/2018/09/webmap.jpg"><img src="https://earthcape.com/wp-content/uploads/2018/09/webmap-1024x562.jpg" alt=""></a></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2006-2018 EarthCape OY. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

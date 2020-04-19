@@ -1,0 +1,9 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: "114802"
+  name: Toolbar
+  href: win-ui/articles/report-designer/report-designer-for-winforms/report-designer-tools/toolbar.html
+- uid: "4259"
+  name: Field List
+  href: win-ui/articles/report-designer/report-designer-for-winforms/report-designer-tools/ui-panels/field-list.html

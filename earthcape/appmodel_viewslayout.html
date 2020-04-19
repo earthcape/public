@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>View Items Layout Customization | EarthCape Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="View Items Layout Customization | EarthCape Documentation ">
+    <meta name="generator" content="docfx 2.40.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="view-items-layout-customization">View Items Layout Customization</h3>
+
+<p>This lesson will guide you through the steps needed to customize form elements for <a href="views.html">DetailViews</a>. For this purpose, the <a href="../application/Unit.html">Units List View</a> will be used. At runtime (<strong>Windows Client only</strong>), you can right-click empty area between form fields and choose &quot;Customize layout&quot;.</p>
+<p><img src="images/appmodel_viewslayout3.png" alt=""></p>
+<p>then drag invisible fields and layout elements from the Customization window to the form (detail view). </p>
+<p><img src="images/appmodel_viewslayout4.png" alt=""></p>
+<p>In an EarthCape Windows Client application, the customizations made using the Runtime Customization window are saved in the user record of <a href="AppModel.html">Application Model</a>. The form layout available by default for all users of the respective application edit the corresponding record of Application Model.</p>
+<h4 id="model-editor-based-customization">Model Editor based customization</h4>
+<p>Design-time layout customizations are performed using the Model Editor. The DashboardView and DetailView nodes have a Layout child node, which grants you access to the layout settings. When the Layout node is selected, the property list to the right is replaced with a design surface that imitates the current View. This allows you to see how the View will be displayed at runtime. The Layout node exposes a tree of nodes that comprises groups, tabbed groups, layout items, labels, separators, etc.</p>
+<p><img src="images/appmodel_viewslayout1.png" alt=""></p>
+<p>To modify default View Items layout, right-click on an empty space and choose Customize Layout. This will invoke the Customization form allowing you to drag View Items where required. The graphical prompts will display the item&#39;s target position.</p>
+<p><img src="images/appmodel_viewslayout2.png" alt=""></p>
+<p>When customizing at design-time, you can also remove and restore View Items by dragging the required items from the View to the Customization form, and vice versa.</p>
+<p>To see the View Items layout tree, use the Layout Tree View tab on the Customization form. Invoke the context menu for additional customization options.</p>
+<p>Additional customization options, which are listed below, can be accessed using the Layout node&#39;s child nodes.</p>
+<ul>
+<li><strong>Reorder Layout Groups and Layout Items</strong></li>
+</ul>
+<p>The LayoutGroup, TabbedGroup and LayoutItem nodes have the Index property. Use this property to set the order within specific levels, Layout Groups or Layout Items.</p>
+<ul>
+<li><strong>Modify a Caption</strong></li>
+</ul>
+<p>Specify whether or not a Caption is displayed for a Layout Group, Tabbed Group or Layout Item using the ShowCaption property.</p>
+<p>Specify a Caption for a group or item if you have made it visible. To do this, use the Caption property.</p>
+<p>Specify the location of a group or item caption using the CaptionLocation property.</p>
+<ul>
+<li><strong>Specify the direction of nested Layout Groups or Layout Items</strong></li>
+</ul>
+<p>Specify whether the groups (or items) within one level are arranged consecutively from left to right or from top to bottom. To do that, use the Layout Group&#39;s Direction property.</p>
+<ul>
+<li><strong>Move a Layout Item to another Layout Group</strong></li>
+</ul>
+<p>Use the drag-and-drop operation to move a Layout Item to the desired Layout Group.</p>
+<p>You can add new items to a Detail View. Right-click the DetailView | Items node, navigate to the Add... group, choose the required View Item type and customize the newly added item as needed.</p>
+<p><img src="images/appmodel_viewslayout5.png" alt=""></p>
+<p>After the new item is added, put it on the Detail View as described above.</p>
+<p>Note
+The Splitter, Separator and Label items are specific to a Windows Client application. These items are not available in the Model Editor invoked for Web Client application.
+There are several Windows Client specific properties that are not available in the Model Editor invoked for an Web Client.</p>
+<p>LayoutGroup node&#39;s IModelWinLayoutGroup.TextAlignMode property
+LayoutItem node&#39;s IModelWinLayoutItem.TextAlignMode property
+LayoutItem node&#39;s IModelLayoutItem.SizeConstraintsType property</p>
+<h4 id="general-layout-settings">General Layout Settings</h4>
+<p>A number of layout options that affect all Views are available in the Model Editor&#39;s Options | LayoutManagerOptions node. For example, you can disable the colon sign that is added to item captions using the EnableCaptionColon property.</p>
+<p>Notes</p>
+<ul>
+<li>By default, the width of Layout Items is not locked and is calculated according to the width of the Layout Group it belongs to. Thus, Layout Items belonging to different Layout Groups will have different alignments.</li>
+</ul>
+<p>Place Items in the same Group to keep them aligned.</p>
+<p><img src="images/appmodel_viewslayout6.png" alt=""></p>
+<ul>
+<li>When you rearrange a layout by moving a Layout Item to a higher-level group, additional spacing between the Item moved and the next Item appears.</li>
+<li>If you wish to keep equal spacing between Items, keep them in the same Group.</li>
+<li>Items and nested Groups inside each Group can be arranged either vertically or horizontally (Direction).</li>
+<li>All components within the same group have the same orientation. In order to arrange two groups horizontally, thus forming two columns of Items, you must put these two groups into another group. This process is called wrapping. You should note that extra wrapping groups can be created automatically when you drag items on the Layout design surface.</li>
+<li>When you move or hide a Layout Item, its Layout Group stays on the form. </li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2006-2018 EarthCape OY. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

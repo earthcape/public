@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GBIF support | EarthCape Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="GBIF support | EarthCape Documentation ">
+    <meta name="generator" content="docfx 2.40.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="gbif-support">GBIF support</h3>
+
+<p>Currently EarthCape has following integrations implemented.</p>
+<h4 id="publishing-datasets-directly-to-gbif">Publishing datasets directly to GBIF</h4>
+<p><em>Prerequisites (Settings)</em>:</p>
+<ul>
+<li>EarthCape Project is the entity that corresponds to GBIF Organization. Publisher key needs to be obtained after <a href="https://www.gbif.org/en/become-a-publisher">becoming a GBIF publisher</a>. The key can also be set for each project individually.</li>
+<li>API user for EarthCape system. You need contact GBIF to request publishing permissions for a user on behalf of your organization.</li>
+<li>Set GBIF API (<a href="http://api.gbif.org/v1/">http://api.gbif.org/v1/</a> or <a href="http://api.gbif-uat.org/v1/">http://api.gbif-uat.org/v1/</a> for testing)</li>
+<li>Create GBIF installation key directly from EarthCape settings page</li>
+<li>Specify endpoint where the DwC-A files are stored.</li>
+<li>Obtain Zenodo token</li>
+</ul>
+<p><br>
+<img src="images/settings_gbif.png" width="500"></p>
+<p><em>Pushing a dataset to GBIF</em>:</p>
+<p>After all settings are in there are 2 options:</p>
+<ul>
+<li>deposit a DwC archive file using &quot;GBIF Store Dwc-A&quot; command. Make sure it is accessible at the endpoint specified in Settings and publish to GBIF directly pointing to the DwC archive stored in your specified location. </li>
+<li>Publish to GBIF via Zenodo. DwC Archive is created and deposited to Zenodo a new record. GBIF dataset is created and its end point is set to the archive file stored on Zenodo. In case of and update, Zenodo new version record is created and GBIF end point is updated.</li>
+</ul>
+<p>If executed successfully GBIF citation and identifier from GBIF are stored for the dataset.</p>
+<p><br>
+<img src="images/gbif8.png" width="500"></p>
+<p>Here is the process demonstrated in EarthCape Windows Client:</p>
+<div style="position: relative; padding-bottom: 65.57377049180329%; height: 0;"><iframe src="https://www.loom.com/embed/b8c10b0080f9422c9d5e395c19aad017" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<p>Here is the process demonstrated in EarthCape Web Client:</p>
+<div style="position: relative; padding-bottom: 65.57377049180329%; height: 0;"><iframe src="https://www.loom.com/embed/153c7d6946ce4a69b94685fe26f0bfd0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<h4 id="taxonomic-names-checking">Taxonomic names checking</h4>
+<p>GBIF&#39;s <a href="http://api.gbif.org/v1/species/match">Species Match service</a> is used to match species names and download name status, valid taxon and higher categories.
+<a href="gbif_taxonomy.html">Read more</a>.</p>
+<h4 id="darwin-core-archive-export">Darwin Core Archive export</h4>
+<p><a href="AppModel.html">Application model</a> <a href="views.html">list view</a> variant is mapped to EarthCape fields. This mapping can be extended or adjusted by editing the model:</p>
+<p><br>
+<img src="images/gbif2.png" width="500"></p>
+<p>This adds a variant option in the tool bar that allows switching from EarthCape default view to <a href="http://rs.tdwg.org/dwc/terms/">Darwin Core</a> formatted view:</p>
+<p><br>
+<img src="images/gbif1.png" width="800">
+<br></p>
+<p>Switching to this view also enables Darwin Core Archive export option in the menu:</p>
+<p><br>
+<img src="images/gbif3.png" width="100"> <img src="images/gbif4.png" width="400"></p>
+<p><br></p>
+<h4 id="supported-extensions">Supported extensions</h4>
+<ul>
+<li><a href="https://tools.gbif.org/dwca-validator/extension.do?id=gbif:Multimedia">Multimedia</a> (<a href="AppModel.html">Model</a> <a href="views.html">view</a>: <em>UnitAttachment_ListView_DwC</em>)</li>
+<li><a href="https://tools.gbif.org/dwca-validator/extension.do?id=gbif:Event">Event</a> (<a href="AppModel.html">Model</a> <a href="views.html">view</a>: <em>LocalityVisit_ListView_DwC</em>)</li>
+</ul>
+<h4 id="configuring-dynamicpropertieshttpsdwctdwgorgtermsdwcdynamicproperties">Configuring <a href="https://dwc.tdwg.org/terms/#dwc:dynamicProperties">dynamicProperties</a></h4>
+<p><a href="../application/Unit.html">Unit</a> object model GBIF node under OwnMembers. Setting <em>IsDwcDynamicProperty</em>=True for the desired model member will include it in the json output for <em>dynamicProperties</em> field.</p>
+<p><br>
+<img src="images/gbif7.png" width="800">
+<br></p>
+<div style="position: relative; padding-bottom: 65.57377049180329%; height: 0;"><iframe src="https://www.loom.com/embed/348397b3122c407ca2c37823627172d9" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div></article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2006-2018 EarthCape OY. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

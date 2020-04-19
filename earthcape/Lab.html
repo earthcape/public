@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Molecular Laboratory Module | EarthCape Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Molecular Laboratory Module | EarthCape Documentation ">
+    <meta name="generator" content="docfx 2.40.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="molecular-laboratory-module">Molecular Laboratory Module</h3>
+
+<p>EarthCape Laboratory Module is designed with the idea to make it convenient to manage laboratory information and samples linked with field data and natural history collection management routines.</p>
+<p>Views are configured in such a way that when working with &quot;deeper&quot; data down the processing pipeline &quot;higher&quot; level (e.g. field samples) fields are visible as well.</p>
+<p>Major advantages over traditional <a href="https://en.wikipedia.org/wiki/Laboratory_information_management_system">LIMS</a>:</p>
+<ul>
+<li>All views can be reconfigured using built-in <a href="AppModel.html">Application Model</a> editing tools, both from the user specific views directly or using centralized application model editor.</li>
+<li>Fully integrates with the rest of EarthCape modules including collection/observation management, mapping, report designer, dashboards and others.</li>
+<li>Available in both Windows desktop standalone application that can be configured to work with a local database or a web based application available through the browser.</li>
+<li>Supports any <a href="databases.html">database backend</a>.</li>
+<li>Takes full advantage of dynamic data slicing by grouping, filtering, pivoting and charting.</li>
+<li>Integrates with <a href="http://www.boldsystems.org/index.php/resources/api?type=webservices">BOLD API</a> downloading sample data back to researcher&#39;s database.</li>
+</ul>
+<h4 id="example-setup">Example setup</h4>
+<div style="position: relative; padding-bottom: 66.66666666666666%; height: 0;"><iframe src="https://www.useloom.com/embed/ebce9745279b435d9c0b5b2b8051df8f" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+<h4 id="class-diagram">Class diagram</h4>
+<p><img src="images/LabClassDiagram.png" alt=""></p>
+<h4 id="collection-samples-unitsapplicationunitmd">Collection samples (<a href="../application/Unit.html">Units</a>)</h4>
+<p><img src="images/lab_image1.PNG" alt=""></p>
+<h4 id="creating-dna-extracts-for-selected-units">Creating DNA Extracts for selected units</h4>
+<p><img src="images/lab_image2.PNG" alt=""></p>
+<h4 id="dna-extracts-list-dnaextactapplicationdnaextractmd">DNA Extracts list (<a href="../application/DnaExtract.html">DnaExtact</a>)</h4>
+<p><img src="images/lab_image3.PNG" alt=""></p>
+<h4 id="adding-extracts-to-a-new-pcr-run">Adding extracts to a (new) PCR run</h4>
+<p><img src="images/lab_image4.PNG" alt=""></p>
+<h4 id="pcr-runs-amplificationapplicationamplificationmd">PCR runs (<a href="../application/Amplification.html">Amplification</a>)</h4>
+<p><img src="images/lab_image5.PNG" alt=""></p>
+<h4 id="pcr-run-view-with-lab-book-tab">PCR run view with lab book tab</h4>
+<p><img src="images/lab_image12.PNG" alt=""></p>
+<h4 id="all-pcr-products-from-all-runs-pcrdnaextractapplicationpcrdnaextractmd">All PCR products from all runs (<a href="../application/PcrDnaExtract.html">PcrDnaExtract</a>)</h4>
+<p><img src="images/lab_image8.PNG" alt=""></p>
+<h4 id="adding-pcr-product-to-a-new-sequencing-run">Adding PCR product to a (new) sequencing run</h4>
+<p><img src="images/lab_image9.PNG" alt=""></p>
+<h4 id="sequencing-runs-sequencingrunapplicationsequencingrunmd">Sequencing runs (<a href="../application/SequencingRun.html">SequencingRun</a>)</h4>
+<p><img src="images/lab_image10.PNG" alt=""></p>
+<h4 id="sequencing-run-view">Sequencing run view</h4>
+<p><img src="images/lab_image11.PNG" alt=""></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2006-2018 EarthCape OY. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

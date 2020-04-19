@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Security System Overview | EarthCape Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Security System Overview | EarthCape Documentation ">
+    <meta name="generator" content="docfx 2.40.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="security-system-overview">Security System Overview</h3>
+
+<ul>
+<li><a href="#overview">Overview</a></li>
+<li><a href="security_anon.html">Public/Anonymous Access</a></li>
+</ul>
+<p><a name="overview"></a>This topic describes the Security System&#39;s permission types. Configure permissions in a role and assign it to a user. Each user should have at least one role. The Security System checks permissions for each role and determines access rights. A user can execute an operation when at least one of the user&#39;s roles allows this operation.</p>
+<p><img src="images/security1.png" alt=""></p>
+<h4 id="administrative-permission">Administrative Permission</h4>
+<p>The <strong>Is Administrative</strong> option grants all available permissions to a role.</p>
+<p>You cannot deny any rights for a role with the Administrative Permission.</p>
+<h4 id="edit-model-permission">Edit Model Permission</h4>
+<p>The <strong>Can Edit Model</strong> option allows users associated with the current role to use the Model Editor.</p>
+<p>When the Edit Model or Administrative permission is granted, the Edit Model Action is available in the Tools category which allows editing the <a href="AppModel.html">application model</a> for a current user.</p>
+<p><img src="images/security2.png" alt=""></p>
+<h4 id="permission-policy">Permission Policy</h4>
+<p>The Permission Policy determines the Security System&#39;s behaviour when a specific type, object or member does not have explicitly specified permissions. Refer to the Permission policies topic for more information.</p>
+<p><img src="images/security3.png" alt=""></p>
+<h4 id="navigation-permissions">Navigation Permissions</h4>
+<p>You can manage access to navigation control&#39;s items in the Navigation Permissions tab. You can grant or deny a permission for a single navigation item or for the whole navigation group as shown on the image below:</p>
+<p><img src="images/security4.png" alt=""></p>
+<p>Item permissions have a greater priority than group permissions. For instance, if you deny access to the group, but grant access for one of its items, this item is enabled in the navigation control.</p>
+<p><strong>IMPORTANT</strong>
+Navigation permissions manage the visibility of the navigation control&#39;s items. They do not grant or deny access to navigation items&#39; associated objects. Use Type permissions or Object permissions to manage access to these objects.</p>
+<h4 id="type-permissions">Type Permissions</h4>
+<p>The Type Permissions tab specifies access to all objects of a particular type. </p>
+<p><img src="images/security5.png" alt=""></p>
+<p>The following operation types can be granted or denied:</p>
+<table>
+<tr>
+<td>Operation</td><td>Description</td>
+</tr>
+<tr>
+<td>Read</td><td>Objects of the current type are readable. To make an object read-only, allow the Read operation and deny the Write operation.</td>
+</tr>
+<tr>
+<td>Write</td><td>Objects of the current type are editable.</td>
+</tr>
+<tr>
+<td>Create</td><td>New objects of the current type can be created. Note that granting Create without Write does not allow a user to save new objects.</td>
+</tr>
+<tr>
+<td>Delete</td><td>Objects of the current type can be deleted</td>
+</tr>
+</table>    
+
+<h4 id="object-permissions">Object Permissions</h4>
+<p>Object permissions grant access to object instances that fit a specified criterion. The following image illustrates the Object Permissions tab in the Type Operation Permissions dialog.</p>
+<p><img src="images/security6.png" alt=""></p>
+<h4 id="member-permissions">Member Permissions</h4>
+<p>Member permissions grant access to specific members of an object. Double-click a record in a type permission list invokes the following dialog.</p>
+<p><img src="images/security7.png" alt=""></p>
+<p>For example, users can have access to objects of a particular type and simultaneously have no access to several members of this type. For another example, it is possible to deny access to objects of a particular type and only allow access to a strict list of its members. You can set a Members value to a string that is a semicolon-separated list of property names.</p>
+<p>You can also specify a criterion for a Member permission entry. The entry is active when the current object meets the criterion.</p>
+<h4 id="reference-properties-access">Reference Properties Access</h4>
+<p>To determine whether access to reference properties such as AssignedTo and complex reference properties such as AssignedTo.Name is allowed, the Security System checks the current type&#39;s Type permissions, the reference property type&#39;s Type permissions, and each member&#39;s Member permissions (in the property path).</p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2006-2018 EarthCape OY. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
