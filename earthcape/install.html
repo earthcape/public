@@ -8,7 +8,7 @@
     <title>Installation | EarthCape Documentation </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Installation | EarthCape Documentation ">
-    <meta name="generator" content="docfx 2.40.2.0">
+    <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -71,7 +71,7 @@
 
 <p><a href="sys.html">System requirements</a></p>
 <h4 id="windows-client">Windows Client</h4>
-<p>EarthCape Windows Client is shipped with MSI (Microsoft Installer) that normally requires administrator rights to install.</p>
+<p>EarthCape WindowsCclient is shipped with MSI (Microsoft Installer) that normally requires administrator rights to install.</p>
 <p>Contact your IT administration for instructions how to install it in case you do not have administrator account.</p>
 <h4 id="web-client">Web Client</h4>
 <p>EarthCape Web Client is an ASP.NET based web application and requires a Web Server (IIS) to be hosted on.</p>
@@ -97,13 +97,6 @@
 <pre><code>&lt;add name=&quot;ConnectionString&quot; connectionString=&quot;User Id=db_user;password=;Data Source=db_password;Initial Catalog=earthcape&quot;/&gt;
 </code></pre><p>If permissions allow a new database will be created on the server upon first connection.
 Admin user is created with an empty password and prompted to set a password on first login.</p>
-<h4 id="error-logging">Error logging</h4>
-<ul>
-<li>Locate configuration files for respective applications (EarthCape.Win.exe.config for Windows Client in the installation target folder or Web.config for Web Client)</li>
-<li>Make sure key &quot;TraceLogLocation&quot; has value &quot;ApplicationFolder&quot;</li>
-<li>Change switch &quot;eXpressAppFramework&quot; value from &quot;0&quot; to &quot;1&quot;</li>
-<li>After encountering an error, send file eXpressAppFramework.log to <a href="https://earthcape.com/support">support</a> along with the description of the error and screen shots before the error occurs and of the application screen including the error.</li>
-</ul>
 </article>
           </div>
           
@@ -114,7 +107,8 @@ Admin user is created with an empty password and prompted to set a password on f
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
