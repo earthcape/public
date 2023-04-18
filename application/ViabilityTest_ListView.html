@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Viability Test | EarthCape Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Viability Test | EarthCape Documentation ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="viability-test">Viability Test</h3>
+
+<ul>
+<li>View: <strong>ViabilityTest_ListView</strong></li>
+<li>Detail View: <strong>ViabilityTest_DetailView</strong></li>
+<li>Data Access Mode: <strong>Server</strong></li>
+<li>Class: <strong><a href="ViabilityTest.html">ViabilityTest</a></strong></li>
+</ul>
+<h4 id="columns">Columns</h4>
+<ul>
+Visible
+
+<table>
+<tr><td>Caption</td><td>Member Type</td><td>Name</td><td>Type</td></tr>
+<tr><td>Created On</td><td>field</td><td>CreatedOn</td><td>DateTime  </td></tr>
+<tr><td>Created By</td><td>field</td><td>CreatedBy</td><td><a href="EarthcapeUser.html">EarthcapeUser</a>  </td></tr>
+<tr><td>Id</td><td>field</td><td>Id</td><td>String  </td></tr>
+<tr><td>Status</td><td>field</td><td>Status</td><td>TaskStatus  </td></tr>
+<tr><td>Pass Fail</td><td>field</td><td>PassFail</td><td><a href="TestPassFail.html">TestPassFail</a>  </td></tr>
+<tr><td>Accepted</td><td>field</td><td>Accepted</td><td>Boolean  </td></tr>
+<tr><td>Acceptance Reason</td><td>field</td><td>AcceptanceReason</td><td><a href="Term.html">Term</a>  </td></tr>
+<tr><td>Type</td><td>field</td><td>Type</td><td><a href="TaskType.html">TaskType</a>  </td></tr>
+<tr><td>Viability Assessment Method</td><td>field</td><td>ViabilityAssessmentMethod</td><td><a href="ViabilityAssessmentMethod.html">ViabilityAssessmentMethod</a>  </td></tr>
+<tr><td>Method</td><td>field</td><td>Method</td><td><a href="Term.html">Term</a>  </td></tr>
+<tr><td>Seed Type</td><td>field</td><td>SeedType</td><td><a href="ViabilityTestSeedType.html">ViabilityTestSeedType</a>  </td></tr>
+<tr><td>Test Type</td><td>field</td><td>TestType</td><td><a href="Term.html">Term</a>  </td></tr>
+<tr><td>Assigned To User</td><td>field</td><td>AssignedToUser</td><td><a href="EarthcapeUser.html">EarthcapeUser</a>  </td></tr>
+<tr><td>Start Date</td><td>field</td><td>StartDate</td><td>DateTime  </td></tr>
+<tr><td>End Date</td><td>field</td><td>EndDate</td><td>DateTime  </td></tr>
+<tr><td>Days</td><td>field</td><td>Days</td><td>Int32  </td></tr>
+<tr><td>Hours</td><td>field</td><td>Hours</td><td>Int32  </td></tr>
+<tr><td>Mins</td><td>field</td><td>Mins</td><td>Int32  </td></tr>
+<tr><td>Duration</td><td>field</td><td>Duration</td><td>TimeSpan  </td></tr>
+<tr><td>Date Completed</td><td>field</td><td>DateCompleted</td><td>DateTime  </td></tr>
+<tr><td>Project</td><td>field</td><td>Project</td><td><a href="Project.html">Project</a>  </td></tr>
+<tr><td>Sown</td><td>field</td><td>Sown</td><td>Int32  </td></tr>
+<tr><td>Germinated</td><td>field</td><td>Germinated</td><td>Int32  </td></tr>
+<tr><td>Fresh</td><td>field</td><td>Fresh</td><td>Int32  </td></tr>
+<tr><td>Infested</td><td>field</td><td>Infested</td><td>Int32  </td></tr>
+<tr><td>Empty</td><td>field</td><td>Empty</td><td>Int32  </td></tr>
+<tr><td>Mouldy</td><td>field</td><td>Mouldy</td><td>Int32  </td></tr>
+<tr><td>Germinated Percentage</td><td>field</td><td>GerminatedPercentage</td><td>Int32  </td></tr>
+<tr><td>Do Not Recalculate</td><td>field</td><td>DoNotRecalculate</td><td>Boolean  </td></tr>
+<tr><td>Mean Time To Germinate</td><td>field</td><td>MeanTimeToGerminate</td><td>Double  </td></tr>
+<tr><td>Pre-Storage</td><td>field</td><td>PreStorage</td><td>Boolean  </td></tr>
+<tr><td>Percentage Unusable</td><td>field</td><td>PercentageUnusable</td><td>Int32  </td></tr>
+<tr><td>Interval</td><td>field</td><td>IsInterval</td><td>Boolean  </td></tr>
+<tr><td>Voucher</td><td>field</td><td>Voucher</td><td>Boolean  </td></tr>
+<tr><td>Estimated Viability Percentage</td><td>field</td><td>EstimatedViabilityPercentage</td><td>Int32  </td></tr>
+<tr><td>Abnormal</td><td>field</td><td>Abnormal</td><td>Int32  </td></tr>
+<tr><td>LCI Percentage</td><td>field</td><td>LciPercentage</td><td>Int32  </td></tr>
+<tr><td>Deducted Seeds</td><td>field</td><td>DeductedSeeds</td><td>Int32  </td></tr>
+<tr><td>Estimated Cut Test</td><td>field</td><td>EstimatedCutTest</td><td>Boolean  </td></tr>
+<tr><td>No Seeds Germinated</td><td>field</td><td>NoSeedsGerminated</td><td>Boolean  </td></tr>
+<tr><td>Comment</td><td>field</td><td>Comment</td><td>String  </td></tr>
+<tr><td>Experimental</td><td>field</td><td>Experimental</td><td>Boolean  </td></tr>
+<tr><td>Partner</td><td>field</td><td>Partner</td><td>Boolean  </td></tr>
+<tr><td>Partner Test Id</td><td>field</td><td>PartnerTestId</td><td>Int32  </td></tr>
+<tr><td>Catalogue Number</td><td>field</td><td>CatalogueNumber</td><td>String  </td></tr>
+<tr><td>1000 Sample Weight (g)</td><td>field</td><td>SeedKSampleWeight</td><td>Double  </td></tr>
+<tr><td>Internal Seed Supply</td><td>field</td><td>RestrictionInternalSeedSupply</td><td><a href="RestrictionType2.html">RestrictionType2</a>  </td></tr>
+<tr><td>External Seed Supply</td><td>field</td><td>RestrictionExternalSeedSupply</td><td><a href="RestrictionType2.html">RestrictionType2</a>  </td></tr>
+<tr><td>Generation</td><td>field</td><td>Generation</td><td>Int32  </td></tr>
+<tr><td>Name</td><td>field</td><td>Name</td><td>String  </td></tr>
+<tr><td>Name</td><td>field</td><td>Name</td><td>String  </td></tr>
+<tr><td>Id</td><td>field</td><td>Id</td><td>String  Unique identifier for occurrence record. Used as a key when importing data.</td></tr>
+<tr><td>Verification Status</td><td>field</td><td>VerificationStatus</td><td><a href="IdentificationVerificationStatus.html">IdentificationVerificationStatus</a>  </td></tr>
+<tr><td>Name</td><td>field</td><td>Name</td><td>String  </td></tr>
+<tr><td>Collected By</td><td>field</td><td>CollectedBy</td><td>String  </td></tr>
+<tr><td>Collection Number</td><td>field</td><td>CollectionNumber</td><td>String  </td></tr>
+<tr><td>Date</td><td>field</td><td>Date</td><td>DateTime  </td></tr>
+<tr><td>Date</td><td>field</td><td>Date</td><td>DateTime  </td></tr>
+<tr><td>Cultivated</td><td>field</td><td>Cultivated</td><td>Boolean  </td></tr>
+<tr><td>Full Name</td><td>field</td><td>FullName</td><td>String  </td></tr>
+<tr><td>Name</td><td>field</td><td>Name</td><td>String  </td></tr>
+<tr><td>Name</td><td>field</td><td>Name</td><td>String  </td></tr>
+<tr><td>Latitude</td><td>field</td><td>Latitude</td><td>Double  </td></tr>
+<tr><td>Longitude</td><td>field</td><td>Longitude</td><td>Double  </td></tr>
+</table>
+
+Hidden
+
+<table>
+<tr><td>Caption</td><td>Member Type</td><td>Name</td><td>Type</td></tr>
+<tr><td>Binomial Test Is Significant</td><td>field</td><td>BinomialTestIsSignificant</td><td>Boolean  </td></tr>
+<tr><td>Binomial Test Pvalue</td><td>field</td><td>BinomialTestPvalue</td><td>Double  </td></tr>
+<tr><td>Binomial Test Zpool</td><td>field</td><td>BinomialTestZpool</td><td>Double  </td></tr>
+<tr><td>Derived From</td><td>field</td><td>DerivedFrom</td><td><a href="CollectionObject.html">CollectionObject</a>  </td></tr>
+<tr><td>Altitude Max M</td><td>field</td><td>AltitudeMaxM</td><td>Double  </td></tr>
+<tr><td>Altitude Min F</td><td>field</td><td>AltitudeMinF</td><td>Double  </td></tr>
+<tr><td>Locality Name</td><td>field</td><td>LocalityName</td><td>String  </td></tr>
+<tr><td>Full Name</td><td>field</td><td>FullName</td><td>String  </td></tr>
+<tr><td>TDWG L1</td><td>field</td><td>TDWGL1</td><td><a href="TDWGGeographyUnit.html">TDWGGeographyUnit</a>  </td></tr>
+<tr><td>TDWG L2</td><td>field</td><td>TDWGL2</td><td><a href="TDWGGeographyUnit.html">TDWGGeographyUnit</a>  </td></tr>
+<tr><td>TDWG L3</td><td>field</td><td>TDWGL3</td><td><a href="TDWGGeographyUnit.html">TDWGGeographyUnit</a>  </td></tr>
+<tr><td>TDWG L4</td><td>field</td><td>TDWGL4</td><td><a href="TDWGGeographyUnit.html">TDWGGeographyUnit</a>  </td></tr>
+<tr><td>Seed Active Count</td><td>field</td><td>SeedActiveCount</td><td>Int32  </td></tr>
+<tr><td>Seed Active Weight</td><td>field</td><td>SeedActiveWeight</td><td>Double  </td></tr>
+<tr><td>Seed Base Count</td><td>field</td><td>SeedBaseCount</td><td>Int32  </td></tr>
+<tr><td>Seed Base Weight</td><td>field</td><td>SeedBaseWeight</td><td>Double  </td></tr>
+<tr><td>Seed Cryo Count</td><td>field</td><td>SeedCryoCount</td><td>Int32  </td></tr>
+<tr><td>Seed Cryo Weight</td><td>field</td><td>SeedCryoWeight</td><td>Double  </td></tr>
+<tr><td>Display Name</td><td>field</td><td>DisplayName</td><td>String  </td></tr>
+<tr><td>Import Record Status</td><td>field</td><td>ImportRecordStatus</td><td><a href="ImportRecordStatus.html">ImportRecordStatus</a>  </td></tr>
+<tr><td>Paper Based Secondary Data</td><td>field</td><td>PaperBasedSecondaryData</td><td>Boolean  </td></tr>
+<tr><td>Replicate Number Of Seeds Check Exact</td><td>field</td><td>ReplicateNumberOfSeedsCheckExact</td><td>Boolean  </td></tr>
+<tr><td>Temperature Average (°C)</td><td>field</td><td>TemperatureAverage</td><td>Double  </td></tr>
+<tr><td>Temperature Max (°C)</td><td>field</td><td>TemperatureMax</td><td>Double  </td></tr>
+<tr><td>Temperature Min (°C)</td><td>field</td><td>TemperatureMin</td><td>Double  </td></tr>
+</table>
+</ul>
+
+
+<h4 id="detail-view-items">Detail View Items</h4>
+<ul>
+<table>
+<tr><td>Caption</td><td>Member Type</td><td>Member Name</td><td>Type</td><td>View Item Id</td></tr>
+<tr><td>Abnormal</td><td>field</td><td>Abnormal</td><td>Int32</td><td>Abnormal</td></tr>
+<tr><td>Acceptance Reason</td><td>field</td><td>AcceptanceReason</td><td><a href="Term.html">Term</a></td><td>AcceptanceReason</td></tr>
+<tr><td>Accepted</td><td>field</td><td>Accepted</td><td>Boolean</td><td>Accepted</td></tr>
+<tr><td>Assigned To User</td><td>field</td><td>AssignedToUser</td><td><a href="EarthcapeUser.html">EarthcapeUser</a></td><td>AssignedToUser</td></tr>
+<tr><td>Attachments</td><td>collection</td><td>Attachments</td><td><a href="Attachment.html">Attachment</a></td><td>Attachments</td></tr>
+<tr><td>Binomial Test Is Significant</td><td>field</td><td>BinomialTestIsSignificant</td><td>Boolean</td><td>BinomialTestIsSignificant</td></tr>
+<tr><td>Binomial Test Pvalue</td><td>field</td><td>BinomialTestPvalue</td><td>Double</td><td>BinomialTestPvalue</td></tr>
+<tr><td>Binomial Test Zpool</td><td>field</td><td>BinomialTestZpool</td><td>Double</td><td>BinomialTestZpool</td></tr>
+<tr><td>Collection Object</td><td>field</td><td>CollectionObject</td><td><a href="CollectionObject.html">CollectionObject</a></td><td>CollectionObject</td></tr>
+<tr><td>Date Completed</td><td>field</td><td>DateCompleted</td><td>DateTime</td><td>DateCompleted</td></tr>
+<tr><td>Deducted Seeds</td><td>field</td><td>DeductedSeeds</td><td>Int32</td><td>DeductedSeeds</td></tr>
+<tr><td>Test Notes</td><td>field</td><td>Description</td><td>String</td><td>Description</td></tr>
+<tr><td>Display Name</td><td>field</td><td>DisplayName</td><td>String</td><td>DisplayName</td></tr>
+<tr><td>Do Not Recalculate</td><td>field</td><td>DoNotRecalculate</td><td>Boolean</td><td>DoNotRecalculate</td></tr>
+<tr><td>Empty</td><td>field</td><td>Empty</td><td>Int32</td><td>Empty</td></tr>
+<tr><td>Estimated Cut Test</td><td>field</td><td>EstimatedCutTest</td><td>Boolean</td><td>EstimatedCutTest</td></tr>
+<tr><td>Estimated Viability Percentage</td><td>field</td><td>EstimatedViabilityPercentage</td><td>Int32</td><td>EstimatedViabilityPercentage</td></tr>
+<tr><td>Experimental</td><td>field</td><td>Experimental</td><td>Boolean</td><td>Experimental</td></tr>
+<tr><td>Fresh</td><td>field</td><td>Fresh</td><td>Int32</td><td>Fresh</td></tr>
+<tr><td>Germinated</td><td>field</td><td>Germinated</td><td>Int32</td><td>Germinated</td></tr>
+<tr><td>Germinated Percentage</td><td>field</td><td>GerminatedPercentage</td><td>Int32</td><td>GerminatedPercentage</td></tr>
+<tr><td>Id</td><td>field</td><td>Id</td><td>String</td><td>Id</td></tr>
+<tr><td>Import Record Status</td><td>field</td><td>ImportRecordStatus</td><td><a href="ImportRecordStatus.html">ImportRecordStatus</a></td><td>ImportRecordStatus</td></tr>
+<tr><td>Infested</td><td>field</td><td>Infested</td><td>Int32</td><td>Infested</td></tr>
+<tr><td>Interval</td><td>field</td><td>IsInterval</td><td>Boolean</td><td>IsInterval</td></tr>
+<tr><td>Lab Book</td><td>field</td><td>LabBook</td><td>String</td><td>LabBook</td></tr>
+<tr><td>Lab Book XLS</td><td>field</td><td>LabBookXLS</td><td>String</td><td>LabBookXLS</td></tr>
+<tr><td>LCI Percentage</td><td>field</td><td>LciPercentage</td><td>Int32</td><td>LciPercentage</td></tr>
+<tr><td>Mean Time To Germinate</td><td>field</td><td>MeanTimeToGerminate</td><td>Double</td><td>MeanTimeToGerminate</td></tr>
+<tr><td>Mouldy</td><td>field</td><td>Mouldy</td><td>Int32</td><td>Mouldy</td></tr>
+<tr><td>No Seeds Germinated</td><td>field</td><td>NoSeedsGerminated</td><td>Boolean</td><td>NoSeedsGerminated</td></tr>
+<tr><td>Paper Based Secondary Data</td><td>field</td><td>PaperBasedSecondaryData</td><td>Boolean</td><td>PaperBasedSecondaryData</td></tr>
+<tr><td>Partner</td><td>field</td><td>Partner</td><td>Boolean</td><td>Partner</td></tr>
+<tr><td>Partner Test Id</td><td>field</td><td>PartnerTestId</td><td>Int32</td><td>PartnerTestId</td></tr>
+<tr><td>Pass Fail</td><td>field</td><td>PassFail</td><td><a href="TestPassFail.html">TestPassFail</a></td><td>PassFail</td></tr>
+<tr><td>Percentage Unusable</td><td>field</td><td>PercentageUnusable</td><td>Int32</td><td>PercentageUnusable</td></tr>
+<tr><td>Pre-Storage</td><td>field</td><td>PreStorage</td><td>Boolean</td><td>PreStorage</td></tr>
+<tr><td>Project</td><td>field</td><td>Project</td><td><a href="Project.html">Project</a></td><td>Project</td></tr>
+<tr><td>Replicates</td><td>collection</td><td>Replicates</td><td><a href="ViabilityTestReplicate.html">ViabilityTestReplicate</a></td><td>Replicates</td></tr>
+<tr><td>Seed Type</td><td>field</td><td>SeedType</td><td><a href="ViabilityTestSeedType.html">ViabilityTestSeedType</a></td><td>SeedType</td></tr>
+<tr><td>Sown</td><td>field</td><td>Sown</td><td>Int32</td><td>Sown</td></tr>
+<tr><td>Start Date</td><td>field</td><td>StartDate</td><td>DateTime</td><td>StartDate</td></tr>
+<tr><td>Status</td><td>field</td><td>Status</td><td>TaskStatus</td><td>Status</td></tr>
+<tr><td>Steps</td><td>collection</td><td>Steps</td><td><a href="ViabilityTestStep.html">ViabilityTestStep</a></td><td>Steps</td></tr>
+<tr><td>Temperature Average (°C)</td><td>field</td><td>TemperatureAverage</td><td>Double</td><td>TemperatureAverage</td></tr>
+<tr><td>Temperature Max (°C)</td><td>field</td><td>TemperatureMax</td><td>Double</td><td>TemperatureMax</td></tr>
+<tr><td>Temperature Min (°C)</td><td>field</td><td>TemperatureMin</td><td>Double</td><td>TemperatureMin</td></tr>
+<tr><td>Test Type</td><td>field</td><td>TestType</td><td><a href="Term.html">Term</a></td><td>TestType</td></tr>
+<tr><td>Viability Assessment Method</td><td>field</td><td>ViabilityAssessmentMethod</td><td><a href="ViabilityAssessmentMethod.html">ViabilityAssessmentMethod</a></td><td>ViabilityAssessmentMethod</td></tr>
+<tr><td>Viability Test Results</td><td>collection</td><td>ViabilityTestResults</td><td><a href="ViabilityTestResult.html">ViabilityTestResult</a></td><td>ViabilityTestResults</td></tr>
+<tr><td>Voucher</td><td>field</td><td>Voucher</td><td>Boolean</td><td>Voucher</td></tr>
+</table>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2006-2018 EarthCape OY. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
