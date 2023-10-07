@@ -99,10 +99,11 @@ Visible
 <tr><td>Sample 6</td><td>field</td><td>Sample6</td><td>Double  </td></tr>
 <tr><td>Sample 7</td><td>field</td><td>Sample7</td><td>Double  </td></tr>
 <tr><td>Mean Weight (g)</td><td>field</td><td>MeanWeight</td><td>Double  </td></tr>
-<tr><td>Quantity Before Count</td><td>field</td><td>QuantityBeforeCount</td><td>Int32  </td></tr>
+<tr><td>Quantity Before Count</td><td>field</td><td>QuantityBeforeCount</td><td>Int64  </td></tr>
+<tr><td>Cryo</td><td>field</td><td>Cryo</td><td>Boolean  </td></tr>
 <tr><td>Standard Error</td><td>field</td><td>StandardError</td><td>Double  </td></tr>
 <tr><td>1000 Sample Weight (g)</td><td>field</td><td>KSampleWeight</td><td>Double  </td></tr>
-<tr><td>New Quantity</td><td>field</td><td>NewQuantity</td><td>Int32  </td></tr>
+<tr><td>New Quantity</td><td>field</td><td>NewQuantity</td><td>Int64  </td></tr>
 <tr><td>Avg. No. of Seed/Fruit</td><td>field</td><td>AvgNoSeedFruit</td><td>Double  </td></tr>
 <tr><td>Status</td><td>field</td><td>Status</td><td>TaskStatus  </td></tr>
 <tr><td>Avg. No. of Loculi/Fruit</td><td>field</td><td>AvgNoLoculiFruit</td><td>Double  </td></tr>
@@ -120,9 +121,11 @@ Hidden
 
 <table>
 <tr><td>Caption</td><td>Member Type</td><td>Name</td><td>Type</td></tr>
+<tr><td>Adjusted Quantity</td><td>field</td><td>AdjustedQuantity</td><td>Int64  </td></tr>
 <tr><td>Assigned To User</td><td>field</td><td>AssignedToUser</td><td><a href="EarthcapeUser.html">EarthcapeUser</a>  </td></tr>
 <tr><td>Created By</td><td>field</td><td>CreatedBy</td><td><a href="EarthcapeUser.html">EarthcapeUser</a>  </td></tr>
 <tr><td>Created On</td><td>field</td><td>CreatedOn</td><td>DateTime  </td></tr>
+<tr><td>Current Quantity</td><td>field</td><td>CurrentQuantity</td><td>Int64  </td></tr>
 <tr><td>Date Completed</td><td>field</td><td>DateCompleted</td><td>DateTime  </td></tr>
 <tr><td>Days</td><td>field</td><td>Days</td><td>Int32  </td></tr>
 <tr><td>Description</td><td>field</td><td>Description</td><td>String  </td></tr>
@@ -137,6 +140,7 @@ Hidden
 <tr><td>Method</td><td>field</td><td>Method</td><td><a href="Term.html">Term</a>  </td></tr>
 <tr><td>Mins</td><td>field</td><td>Mins</td><td>Int32  </td></tr>
 <tr><td>Oid</td><td>field</td><td>Oid</td><td>Guid  </td></tr>
+<tr><td>Original Quantity</td><td>field</td><td>OriginalQuantity</td><td>Int64  </td></tr>
 <tr><td>Paper Based Secondary Data</td><td>field</td><td>PaperBasedSecondaryData</td><td>Boolean  </td></tr>
 <tr><td>Parent</td><td>field</td><td>Parent</td><td><a href="Task.html">Task</a>  </td></tr>
 <tr><td>Project</td><td>field</td><td>Project</td><td><a href="Project.html">Project</a>  </td></tr>
@@ -156,13 +160,14 @@ Hidden
 <ul>
 <table>
 <tr><td>Caption</td><td>Member Type</td><td>Member Name</td><td>Type</td><td>View Item Id</td></tr>
+<tr><td>Adjusted Quantity</td><td>field</td><td>AdjustedQuantity</td><td>Int64</td><td>AdjustedQuantity</td></tr>
 <tr><td>Assigned To User</td><td>field</td><td>AssignedToUser</td><td><a href="EarthcapeUser.html">EarthcapeUser</a></td><td>AssignedToUser</td></tr>
 <tr><td>Attachments</td><td>collection</td><td>Attachments</td><td><a href="Attachment.html">Attachment</a></td><td>Attachments</td></tr>
 <tr><td>Avg. No. of Loculi/Fruit</td><td>field</td><td>AvgNoLoculiFruit</td><td>Double</td><td>AvgNoLoculiFruit</td></tr>
 <tr><td>Avg. No. of Seed/Fruit</td><td>field</td><td>AvgNoSeedFruit</td><td>Double</td><td>AvgNoSeedFruit</td></tr>
 <tr><td>Collection Object</td><td>field</td><td>CollectionObject</td><td><a href="CollectionObject.html">CollectionObject</a></td><td>CollectionObject</td></tr>
-<tr><td>Adjusted Quantity</td><td>field</td><td>AdjustedQuantity</td><td>Int32</td><td>CollectionObject.AdjustedQuantity</td></tr>
-<tr><td>Current Quantity</td><td>field</td><td>CurrentQuantity</td><td>Int32</td><td>CollectionObject.CurrentQuantity</td></tr>
+<tr><td>Adjusted Quantity</td><td>field</td><td>AdjustedQuantity</td><td>Int64</td><td>CollectionObject.AdjustedQuantity</td></tr>
+<tr><td>Current Quantity</td><td>field</td><td>CurrentQuantity</td><td>Int64</td><td>CollectionObject.CurrentQuantity</td></tr>
 <tr><td>Original Quantity</td><td>field</td><td>OriginalQuantity</td><td>Int32</td><td>CollectionObject.OriginalQuantity</td></tr>
 <tr><td>1000 Sample Weight (g)</td><td>field</td><td>SeedKSampleWeight</td><td>Double</td><td>CollectionObject.SeedKSampleWeight</td></tr>
 <tr><td>Seed Per Fruit</td><td>field</td><td>SeedPerFruit</td><td>Int32</td><td>CollectionObject.SeedPerFruit</td></tr>
@@ -170,8 +175,10 @@ Hidden
 <tr><td>Seed Quality Test Infested</td><td>field</td><td>SeedQualityTestInfested</td><td>Int32</td><td>CollectionObject.SeedQualityTestInfested</td></tr>
 <tr><td>Seed Quality Test Ok</td><td>field</td><td>SeedQualityTestOk</td><td>Int32</td><td>CollectionObject.SeedQualityTestOk</td></tr>
 <tr><td>Seed Quality Test Part Filled</td><td>field</td><td>SeedQualityTestPartFilled</td><td>Int32</td><td>CollectionObject.SeedQualityTestPartFilled</td></tr>
-<tr><td>Seed Quality Test Quantity</td><td>field</td><td>SeedQualityTestQuantity</td><td>Int32</td><td>CollectionObject.SeedQualityTestQuantity</td></tr>
+<tr><td>Seed Quality Test Quantity</td><td>field</td><td>SeedQualityTestQuantity</td><td>Int64</td><td>CollectionObject.SeedQualityTestQuantity</td></tr>
 <tr><td>Total Seeds Used</td><td>field</td><td>TotalSeedsUsed</td><td>Int32</td><td>CollectionObject.TotalSeedsUsed</td></tr>
+<tr><td>Cryo</td><td>field</td><td>Cryo</td><td>Boolean</td><td>Cryo</td></tr>
+<tr><td>Current Quantity</td><td>field</td><td>CurrentQuantity</td><td>Int64</td><td>CurrentQuantity</td></tr>
 <tr><td>Date Completed</td><td>field</td><td>DateCompleted</td><td>DateTime</td><td>DateCompleted</td></tr>
 <tr><td>Days</td><td>field</td><td>Days</td><td>Int32</td><td>Days</td></tr>
 <tr><td>Display Name</td><td>field</td><td>DisplayName</td><td>String</td><td>DisplayName</td></tr>
@@ -185,10 +192,11 @@ Hidden
 <tr><td>Mean Weight (g)</td><td>field</td><td>MeanWeight</td><td>Double</td><td>MeanWeight</td></tr>
 <tr><td>Method</td><td>field</td><td>Method</td><td><a href="Term.html">Term</a></td><td>Method</td></tr>
 <tr><td>Mins</td><td>field</td><td>Mins</td><td>Int32</td><td>Mins</td></tr>
-<tr><td>New Quantity</td><td>field</td><td>NewQuantity</td><td>Int32</td><td>NewQuantity</td></tr>
+<tr><td>New Quantity</td><td>field</td><td>NewQuantity</td><td>Int64</td><td>NewQuantity</td></tr>
+<tr><td>Original Quantity</td><td>field</td><td>OriginalQuantity</td><td>Int64</td><td>OriginalQuantity</td></tr>
 <tr><td>Paper Based Secondary Data</td><td>field</td><td>PaperBasedSecondaryData</td><td>Boolean</td><td>PaperBasedSecondaryData</td></tr>
 <tr><td>Precision</td><td>field</td><td>Precision</td><td>Int32</td><td>Precision</td></tr>
-<tr><td>Quantity Before Count</td><td>field</td><td>QuantityBeforeCount</td><td>Int32</td><td>QuantityBeforeCount</td></tr>
+<tr><td>Quantity Before Count</td><td>field</td><td>QuantityBeforeCount</td><td>Int64</td><td>QuantityBeforeCount</td></tr>
 <tr><td>Quantity from X-ray</td><td>field</td><td>QuantityFromXray</td><td>Double</td><td>QuantityFromXray</td></tr>
 <tr><td>Quantity Sent To Backup</td><td>field</td><td>QuantitySentToBackup</td><td>Int32</td><td>QuantitySentToBackup</td></tr>
 <tr><td>Remainder (g)</td><td>field</td><td>Remainder</td><td>Double</td><td>Remainder</td></tr>

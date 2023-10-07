@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Occurrences | EarthCape Documentation </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Occurrences | EarthCape Documentation ">
+    <meta name="generator" content="docfx 2.57.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h3 id="occurrences">Occurrences</h3>
+
+<ul>
+<li>View: <strong>Occurrence_ListView_Map</strong></li>
+<li>Detail View: <strong>Occurrence_DetailView</strong></li>
+<li>Data Access Mode: <strong>Client</strong></li>
+<li>Class: <strong><a href="Occurrence.html">Occurrence</a></strong></li>
+</ul>
+<p>Observation or field objects that typically have Geographic, Taxonomic and Date information</p>
+<h4 id="columns">Columns</h4>
+<ul>
+Visible
+
+<table>
+<tr><td>Caption</td><td>Member Type</td><td>Name</td><td>Type</td></tr>
+<tr><td>Id</td><td>field</td><td>Id</td><td>String  Unique identifier for occurrence record. Used as a key when importing data.</td></tr>
+<tr><td>Taxonomic Name</td><td>field</td><td>TaxonomicName</td><td><a href="TaxonomicName.html">TaxonomicName</a>  </td></tr>
+<tr><td>Locality</td><td>field</td><td>Locality</td><td><a href="Locality.html">Locality</a>  </td></tr>
+<tr><td>Date</td><td>field</td><td>Date</td><td>DateTime  </td></tr>
+<tr><td>Latitude</td><td>field</td><td>Latitude</td><td>Double  </td></tr>
+<tr><td>Longitude</td><td>field</td><td>Longitude</td><td>Double  </td></tr>
+</table>
+
+Hidden
+
+<table>
+<tr><td>Caption</td><td>Member Type</td><td>Name</td><td>Type</td></tr>
+<tr><td>Accession Ena</td><td>field</td><td>AccessionEna</td><td>String  </td></tr>
+<tr><td>Altitude 1</td><td>field</td><td>Altitude1</td><td>Double  </td></tr>
+<tr><td>Altitude 2</td><td>field</td><td>Altitude2</td><td>Double  </td></tr>
+<tr><td>Altitude From</td><td>field</td><td>AltitudeFrom</td><td><a href="LengthUnit.html">LengthUnit</a>  </td></tr>
+<tr><td>Altitude Max F</td><td>field</td><td>AltitudeMaxF</td><td>Double  </td></tr>
+<tr><td>Altitude Max M</td><td>field</td><td>AltitudeMaxM</td><td>Double  </td></tr>
+<tr><td>Altitude Method</td><td>field</td><td>AltitudeMethod</td><td><a href="Term.html">Term</a>  </td></tr>
+<tr><td>Altitude Min F</td><td>field</td><td>AltitudeMinF</td><td>Double  </td></tr>
+<tr><td>Altitude Min M</td><td>field</td><td>AltitudeMinM</td><td>Double  </td></tr>
+<tr><td>Altitude Verbatim</td><td>field</td><td>AltitudeVerbatim</td><td>String  </td></tr>
+<tr><td>Area</td><td>field</td><td>Area</td><td>Double  </td></tr>
+<tr><td>Attachment Count</td><td>field</td><td>AttachmentCount</td><td>Int32  </td></tr>
+<tr><td>Attachments Private</td><td>field</td><td>AttachmentsPrivate</td><td>Boolean  </td></tr>
+<tr><td>Basis Of Record</td><td>field</td><td>BasisOfRecord</td><td><a href="BasisOfRecord.html">BasisOfRecord</a>  </td></tr>
+<tr><td>Biology Details</td><td>field</td><td>BiologyDetails</td><td>String  </td></tr>
+<tr><td>Birth Date</td><td>field</td><td>BirthDate</td><td>DateTime  </td></tr>
+<tr><td>Brood</td><td>field</td><td>Brood</td><td><a href="Brood.html">Brood</a>  </td></tr>
+<tr><td>Centroid_X</td><td>field</td><td>Centroid_X</td><td>Decimal  </td></tr>
+<tr><td>Centroid_Y</td><td>field</td><td>Centroid_Y</td><td>Decimal  </td></tr>
+<tr><td>Cf</td><td>field</td><td>Cf</td><td>Boolean  </td></tr>
+<tr><td>Check CITES</td><td>field</td><td>CheckCITES</td><td>Boolean  </td></tr>
+<tr><td>Check Date</td><td>field</td><td>CheckDate</td><td>DateTime  </td></tr>
+<tr><td>CITES Controlled</td><td>field</td><td>CITESControlled</td><td>Boolean  </td></tr>
+<tr><td>CITES Current Listing</td><td>field</td><td>CITESCurrentListing</td><td><a href="CitesAppendix.html">CitesAppendix</a>  </td></tr>
+<tr><td>Class</td><td>field</td><td>Class</td><td>String  </td></tr>
+<tr><td>Cloud</td><td>field</td><td>Cloud</td><td>Int32  </td></tr>
+<tr><td>Collected By</td><td>field</td><td>CollectedBy</td><td>String  </td></tr>
+<tr><td>Collection Method</td><td>field</td><td>CollectionMethod</td><td>String  </td></tr>
+<tr><td>Collection Number</td><td>field</td><td>CollectionNumber</td><td>String  </td></tr>
+<tr><td>Comment</td><td>field</td><td>Comment</td><td>String  </td></tr>
+<tr><td>Concat Catalogue Numbers</td><td>field</td><td>ConcatCatalogueNumbers</td><td>String  </td></tr>
+<tr><td>Concat Uses</td><td>field</td><td>ConcatUses</td><td>String  </td></tr>
+<tr><td>Continent</td><td>field</td><td>Continent</td><td>String  </td></tr>
+<tr><td>Co-occurring Species</td><td>field</td><td>CooccurringSpecies</td><td>String  </td></tr>
+<tr><td>Coord Accuracy</td><td>field</td><td>CoordAccuracy</td><td>Int32  </td></tr>
+<tr><td>Coord From</td><td>field</td><td>CoordFrom</td><td><a href="CoordinatesUpdateFrom.html">CoordinatesUpdateFrom</a>  </td></tr>
+<tr><td>Coordinate Uncertainty In Meters</td><td>field</td><td>CoordinateUncertaintyInMeters</td><td>Int32  </td></tr>
+<tr><td>Coord Source</td><td>field</td><td>CoordSource</td><td>String  </td></tr>
+<tr><td>Coord Source List</td><td>field</td><td>CoordSourceList</td><td><a href="Term.html">Term</a>  </td></tr>
+<tr><td>Count</td><td>field</td><td>Count</td><td>Int32  </td></tr>
+<tr><td>Country Code</td><td>field</td><td>CountryCode</td><td>String  </td></tr>
+<tr><td>Country ISO</td><td>field</td><td>CountryISO</td><td><a href="Country.html">Country</a>  </td></tr>
+<tr><td>Created By</td><td>field</td><td>CreatedBy</td><td><a href="EarthcapeUser.html">EarthcapeUser</a>  </td></tr>
+<tr><td>Created By Import</td><td>field</td><td>CreatedByImport</td><td><a href="SpreadsheetImport.html">SpreadsheetImport</a>  </td></tr>
+<tr><td>Created On</td><td>field</td><td>CreatedOn</td><td>DateTime  </td></tr>
+<tr><td>Current Identification</td><td>field</td><td>CurrentIdentification</td><td><a href="Identification.html">Identification</a>  </td></tr>
+<tr><td>Dataset</td><td>field</td><td>Dataset</td><td><a href="Dataset.html">Dataset</a>  </td></tr>
+<tr><td>Date 1</td><td>field</td><td>Date1</td><td>DateTime  </td></tr>
+<tr><td>Date 1 Accuracy</td><td>field</td><td>Date1Accuracy</td><td><a href="DateAccuracy.html">DateAccuracy</a>  </td></tr>
+<tr><td>Date Accuracy</td><td>field</td><td>DateAccuracy</td><td><a href="DateAccuracy.html">DateAccuracy</a>  </td></tr>
+<tr><td>Date (YYYY-MM-DD)</td><td>field</td><td>DateEntry</td><td>String  Date (YYYY-MM-DD)</td></tr>
+<tr><td>Date 1 (YYYY-MM-DD)</td><td>field</td><td>DateEntry1</td><td>String  Date 1 (YYYY-MM-DD)</td></tr>
+<tr><td>Date Label</td><td>field</td><td>DateLabel</td><td>DateTime  </td></tr>
+<tr><td>Date Label Accuracy</td><td>field</td><td>DateLabelAccuracy</td><td><a href="DateAccuracy.html">DateAccuracy</a>  </td></tr>
+<tr><td>Date Label Entry</td><td>field</td><td>DateLabelEntry</td><td>String  </td></tr>
+<tr><td>Date Label Verbatim</td><td>field</td><td>DateLabelVerbatim</td><td>String  </td></tr>
+<tr><td>Date Source</td><td>field</td><td>DateSource</td><td><a href="DateSource.html">DateSource</a>  </td></tr>
+<tr><td>Date Verbatim</td><td>field</td><td>DateVerbatim</td><td>String  </td></tr>
+<tr><td>Day</td><td>field</td><td>Day</td><td>Int32  </td></tr>
+<tr><td>Day 1</td><td>field</td><td>Day1</td><td>Int32  </td></tr>
+<tr><td>Day Label</td><td>field</td><td>DayLabel</td><td>Int32  </td></tr>
+<tr><td>Death Date</td><td>field</td><td>DeathDate</td><td>DateTime  </td></tr>
+<tr><td>Description</td><td>field</td><td>Description</td><td>String  </td></tr>
+<tr><td>EPSG</td><td>field</td><td>EPSG</td><td>Int32  </td></tr>
+<tr><td>Family</td><td>field</td><td>Family</td><td>String  </td></tr>
+<tr><td>First Division</td><td>field</td><td>FirstDivision</td><td>String  </td></tr>
+<tr><td>Full Name</td><td>field</td><td>FullName</td><td>String  </td></tr>
+<tr><td>Gbif Key</td><td>field</td><td>GbifKey</td><td>Int64  </td></tr>
+<tr><td>Gbif Occurrence ID</td><td>field</td><td>GbifOccurrenceID</td><td>String  </td></tr>
+<tr><td>Genotype</td><td>field</td><td>Genotype</td><td><a href="Genotype.html">Genotype</a>  </td></tr>
+<tr><td>Genus</td><td>field</td><td>Genus</td><td>String  </td></tr>
+<tr><td>Geography Private</td><td>field</td><td>GeographyPrivate</td><td>Boolean  </td></tr>
+<tr><td>Geo Json</td><td>field</td><td>GeoJson</td><td>String  </td></tr>
+<tr><td>Geometry Type</td><td>field</td><td>GeometryType</td><td><a href="GeometryType.html">GeometryType</a>  </td></tr>
+<tr><td>Georef Notes</td><td>field</td><td>GeorefNotes</td><td>String  </td></tr>
+<tr><td>Gps Precision</td><td>field</td><td>GpsPrecision</td><td>Double  </td></tr>
+<tr><td>Habitat</td><td>field</td><td>Habitat</td><td><a href="Habitat.html">Habitat</a>  </td></tr>
+<tr><td>Habitat Details</td><td>field</td><td>HabitatDetails</td><td>String  </td></tr>
+<tr><td>Host</td><td>field</td><td>Host</td><td>String  </td></tr>
+<tr><td>Host Details</td><td>field</td><td>HostDetails</td><td>String  </td></tr>
+<tr><td>Host Taxonomic Name</td><td>field</td><td>HostTaxonomicName</td><td><a href="TaxonomicName.html">TaxonomicName</a>  </td></tr>
+<tr><td>Identification Comments</td><td>field</td><td>IdentificationComments</td><td>String  </td></tr>
+<tr><td>Identification Confirmed By</td><td>field</td><td>IdentificationConfirmedBy</td><td>String  </td></tr>
+<tr><td>Identification Confirmed Year</td><td>field</td><td>IdentificationConfirmedYear</td><td>Int32  </td></tr>
+<tr><td>Identification Method</td><td>field</td><td>IdentificationMethod</td><td>String  </td></tr>
+<tr><td>Identification Qualifier</td><td>field</td><td>IdentificationQualifier</td><td><a href="IdentificationQualifier.html">IdentificationQualifier</a>  </td></tr>
+<tr><td>Identified By</td><td>field</td><td>IdentifiedBy</td><td>String  </td></tr>
+<tr><td>Identified On</td><td>field</td><td>IdentifiedOn</td><td>DateTime  </td></tr>
+<tr><td>Identified On Year</td><td>field</td><td>IdentifiedOnYear</td><td>Int32  </td></tr>
+<tr><td>Identifier Email</td><td>field</td><td>IdentifierEmail</td><td>String  </td></tr>
+<tr><td>Identifier Institution</td><td>field</td><td>IdentifierInstitution</td><td>String  </td></tr>
+<tr><td>Imported By</td><td>field</td><td>ImportedBy</td><td><a href="EarthcapeUser.html">EarthcapeUser</a>  </td></tr>
+<tr><td>Imported On</td><td>field</td><td>ImportedOn</td><td>DateTime  </td></tr>
+<tr><td>Imported Update By</td><td>field</td><td>ImportedUpdateBy</td><td><a href="EarthcapeUser.html">EarthcapeUser</a>  </td></tr>
+<tr><td>Imported Update On</td><td>field</td><td>ImportedUpdateOn</td><td>DateTime  </td></tr>
+<tr><td>Import Record Status</td><td>field</td><td>ImportRecordStatus</td><td><a href="ImportRecordStatus.html">ImportRecordStatus</a>  </td></tr>
+<tr><td>Individual</td><td>field</td><td>Individual</td><td><a href="Individual.html">Individual</a>  </td></tr>
+<tr><td>Infraspecific Epithet</td><td>field</td><td>InfraspecificEpithet</td><td>String  </td></tr>
+<tr><td>Instar</td><td>field</td><td>Instar</td><td><a href="Instar.html">Instar</a>  </td></tr>
+<tr><td>Is Dead</td><td>field</td><td>IsDead</td><td>Boolean  </td></tr>
+<tr><td>Is Private</td><td>field</td><td>IsPrivate</td><td>Boolean  </td></tr>
+<tr><td>Kew Region</td><td>field</td><td>KewRegion</td><td><a href="KewRegion.html">KewRegion</a>  </td></tr>
+<tr><td>Kingdom</td><td>field</td><td>Kingdom</td><td>String  </td></tr>
+<tr><td>Label Text</td><td>field</td><td>LabelText</td><td>String  </td></tr>
+<tr><td>Last Modified By</td><td>field</td><td>LastModifiedBy</td><td><a href="EarthcapeUser.html">EarthcapeUser</a>  </td></tr>
+<tr><td>Last Modified On</td><td>field</td><td>LastModifiedOn</td><td>DateTime  </td></tr>
+<tr><td>Latitude D</td><td>field</td><td>LatitudeD</td><td>Int32  </td></tr>
+<tr><td>Latitude H</td><td>field</td><td>LatitudeH</td><td><a href="LatitudeHemisphere.html">LatitudeHemisphere</a>  </td></tr>
+<tr><td>Latitude M</td><td>field</td><td>LatitudeM</td><td>Double  </td></tr>
+<tr><td>Latitude S</td><td>field</td><td>LatitudeS</td><td>Double  </td></tr>
+<tr><td>Latitude String</td><td>field</td><td>LatitudeString</td><td>String  </td></tr>
+<tr><td>Latitude Verbatim</td><td>field</td><td>LatitudeVerbatim</td><td>String  </td></tr>
+<tr><td>Length</td><td>field</td><td>Length</td><td>Double  </td></tr>
+<tr><td>Life Stage</td><td>field</td><td>LifeStage</td><td><a href="LifeStage.html">LifeStage</a>  </td></tr>
+<tr><td>Locality Comment</td><td>field</td><td>LocalityComment</td><td>String  </td></tr>
+<tr><td>Locality Description</td><td>field</td><td>LocalityDescription</td><td>String  </td></tr>
+<tr><td>Locality Name</td><td>field</td><td>LocalityName</td><td>String  </td></tr>
+<tr><td>Locality Visit</td><td>field</td><td>LocalityVisit</td><td><a href="LocalityVisit.html">LocalityVisit</a>  </td></tr>
+<tr><td>Longitude D</td><td>field</td><td>LongitudeD</td><td>Int32  </td></tr>
+<tr><td>Longitude H</td><td>field</td><td>LongitudeH</td><td><a href="LongitudeHemisphere.html">LongitudeHemisphere</a>  </td></tr>
+<tr><td>Longitude M</td><td>field</td><td>LongitudeM</td><td>Double  </td></tr>
+<tr><td>Longitude S</td><td>field</td><td>LongitudeS</td><td>Double  </td></tr>
+<tr><td>Longitude String</td><td>field</td><td>LongitudeString</td><td>String  </td></tr>
+<tr><td>Longitude Verbatim</td><td>field</td><td>LongitudeVerbatim</td><td>String  </td></tr>
+<tr><td>Map</td><td>field</td><td>Map</td><td><a href="CustomIMapsMarker.md">CustomIMapsMarker</a>  </td></tr>
+<tr><td>Map Ref</td><td>field</td><td>MapRef</td><td>String  </td></tr>
+<tr><td>Map Source</td><td>field</td><td>MapSource</td><td><a href="Term.html">Term</a>  </td></tr>
+<tr><td>Microhabitat</td><td>field</td><td>Microhabitat</td><td><a href="Habitat.html">Habitat</a>  </td></tr>
+<tr><td>Month</td><td>field</td><td>Month</td><td>Int32  </td></tr>
+<tr><td>Month 1</td><td>field</td><td>Month1</td><td>Int32  </td></tr>
+<tr><td>Month Label</td><td>field</td><td>MonthLabel</td><td>Int32  </td></tr>
+<tr><td>Non Linnean Name</td><td>field</td><td>NonLinneanName</td><td>String  </td></tr>
+<tr><td>Oid</td><td>field</td><td>Oid</td><td>Guid  </td></tr>
+<tr><td>Order</td><td>field</td><td>Order</td><td>String  </td></tr>
+<tr><td>Original Coordinate Format</td><td>field</td><td>OriginalCoordinateFormat</td><td><a href="OriginalCoordinateFormat.html">OriginalCoordinateFormat</a>  </td></tr>
+<tr><td>Other Id</td><td>field</td><td>OtherId</td><td>String  </td></tr>
+<tr><td>Other Name</td><td>field</td><td>OtherName</td><td>String  </td></tr>
+<tr><td>Phenology Notes</td><td>field</td><td>PhenologyNotes</td><td>String  </td></tr>
+<tr><td>Phylum</td><td>field</td><td>Phylum</td><td>String  </td></tr>
+<tr><td>Population</td><td>field</td><td>Population</td><td><a href="Population.html">Population</a>  </td></tr>
+<tr><td>Precipitation</td><td>field</td><td>Precipitation</td><td>String  </td></tr>
+<tr><td>Preservation</td><td>field</td><td>Preservation</td><td>String  </td></tr>
+<tr><td>Project</td><td>field</td><td>Project</td><td><a href="Project.html">Project</a>  </td></tr>
+<tr><td>Public Comment</td><td>field</td><td>PublicComment</td><td>String  </td></tr>
+<tr><td>Quantity</td><td>field</td><td>Quantity</td><td>Double  </td></tr>
+<tr><td>Recorded By</td><td>field</td><td>RecordedBy</td><td><a href="Person.html">Person</a>  </td></tr>
+<tr><td>Recorded On</td><td>field</td><td>RecordedOn</td><td>DateTime  </td></tr>
+<tr><td>Reference</td><td>field</td><td>Reference</td><td><a href="Reference.html">Reference</a>  </td></tr>
+<tr><td>Regional Information</td><td>field</td><td>RegionalInformation</td><td>String  </td></tr>
+<tr><td>Restriction Approval Organization</td><td>field</td><td>RestrictionApprovalOrganization</td><td><a href="Organization.html">Organization</a>  </td></tr>
+<tr><td>Restriction Approval Organization Conflict</td><td>field</td><td>RestrictionApprovalOrganizationConflict</td><td>Boolean  </td></tr>
+<tr><td>Restriction Approval Person</td><td>field</td><td>RestrictionApprovalPerson</td><td><a href="Person.html">Person</a>  </td></tr>
+<tr><td>Restriction Approval Person Conflict</td><td>field</td><td>RestrictionApprovalPersonConflict</td><td>Boolean  </td></tr>
+<tr><td>Image Sharing</td><td>field</td><td>RestrictionImageSharing</td><td><a href="RestrictionType1.html">RestrictionType1</a>  </td></tr>
+<tr><td>Imaging Prohibited</td><td>field</td><td>RestrictionImagingProhibited</td><td>Boolean  </td></tr>
+<tr><td>Research Embargo Date</td><td>field</td><td>RestrictionResearchEmbargoDate</td><td>DateTime  </td></tr>
+<tr><td>Share All Data Externally</td><td>field</td><td>RestrictionShareAllDataExternally</td><td><a href="RestrictionType2.html">RestrictionType2</a>  </td></tr>
+<tr><td>Share Location Data Externally</td><td>field</td><td>RestrictionShareLocationDataExternally</td><td><a href="RestrictionType2.html">RestrictionType2</a>  </td></tr>
+<tr><td>Restrictions Not Inherited</td><td>field</td><td>RestrictionsNotInherited</td><td>Boolean  </td></tr>
+<tr><td>Second Division</td><td>field</td><td>SecondDivision</td><td>String  </td></tr>
+<tr><td>Self</td><td>field</td><td>Self</td><td><a href="CustomIMapsMarker.md">CustomIMapsMarker</a>  </td></tr>
+<tr><td>Sequence</td><td>field</td><td>Sequence</td><td>Int64  </td></tr>
+<tr><td>Sex</td><td>field</td><td>Sex</td><td><a href="Sex.html">Sex</a>  </td></tr>
+<tr><td>Slope (º)</td><td>field</td><td>Slope</td><td><a href="SlopeCategory.html">SlopeCategory</a>  </td></tr>
+<tr><td>Slope Aspect</td><td>field</td><td>SlopeAspect</td><td><a href="SlopeAspect.html">SlopeAspect</a>  </td></tr>
+<tr><td>Soil Texture</td><td>field</td><td>SoilTexture</td><td><a href="SoilTexture.html">SoilTexture</a>  </td></tr>
+<tr><td>Specific Epithet</td><td>field</td><td>SpecificEpithet</td><td>String  </td></tr>
+<tr><td>Stage</td><td>field</td><td>Stage</td><td><a href="DevelopmentStage.html">DevelopmentStage</a>  </td></tr>
+<tr><td>Store</td><td>field</td><td>Store</td><td><a href="Store.html">Store</a>  </td></tr>
+<tr><td>Subfamily</td><td>field</td><td>Subfamily</td><td>String  </td></tr>
+<tr><td>Substrate</td><td>field</td><td>Substrate</td><td><a href="Substrate.html">Substrate</a>  </td></tr>
+<tr><td>Substrate Qualifier</td><td>field</td><td>SubstrateQualifier</td><td><a href="SubstrateQualifier.html">SubstrateQualifier</a>  </td></tr>
+<tr><td>Substrate Text</td><td>field</td><td>SubstrateText</td><td>String  </td></tr>
+<tr><td>Taxonomic Name Gbif</td><td>field</td><td>TaxonomicNameGbif</td><td><a href="TaxonomicName.html">TaxonomicName</a>  </td></tr>
+<tr><td>Taxonomic Name Id</td><td>field</td><td>TaxonomicNameId</td><td>String  </td></tr>
+<tr><td>TDWG L1</td><td>field</td><td>TDWGL1</td><td><a href="TDWGGeographyUnit.html">TDWGGeographyUnit</a>  </td></tr>
+<tr><td>TDWG L2</td><td>field</td><td>TDWGL2</td><td><a href="TDWGGeographyUnit.html">TDWGGeographyUnit</a>  </td></tr>
+<tr><td>TDWG L3</td><td>field</td><td>TDWGL3</td><td><a href="TDWGGeographyUnit.html">TDWGGeographyUnit</a>  </td></tr>
+<tr><td>TDWG L4</td><td>field</td><td>TDWGL4</td><td><a href="TDWGGeographyUnit.html">TDWGGeographyUnit</a>  </td></tr>
+<tr><td>Temporary Name</td><td>field</td><td>TemporaryName</td><td>String  </td></tr>
+<tr><td>Temporary Name Reason</td><td>field</td><td>TemporaryNameReason</td><td><a href="TemporaryNameReason.html">TemporaryNameReason</a>  </td></tr>
+<tr><td>Thumbnail</td><td>field</td><td>Thumbnail</td><td>Image  </td></tr>
+<tr><td>Title</td><td>field</td><td>Title</td><td>String  </td></tr>
+<tr><td>Tooltip</td><td>field</td><td>Tooltip</td><td>String  </td></tr>
+<tr><td>Town</td><td>field</td><td>Town</td><td>String  </td></tr>
+<tr><td>Type</td><td>field</td><td>Type</td><td>String  </td></tr>
+<tr><td>Updated By Import</td><td>field</td><td>UpdatedByImport</td><td><a href="SpreadsheetImport.html">SpreadsheetImport</a>  </td></tr>
+<tr><td>Url</td><td>field</td><td>Url</td><td>String  </td></tr>
+<tr><td>Uses</td><td>field</td><td>Uses</td><td>String  </td></tr>
+<tr><td>Value</td><td>field</td><td>Value</td><td>Single  </td></tr>
+<tr><td>Verbatim Coordinates</td><td>field</td><td>VerbatimCoordinates</td><td>String  </td></tr>
+<tr><td>Verbatim Country</td><td>field</td><td>VerbatimCountry</td><td>String  </td></tr>
+<tr><td>Verbatim Taxonomic Name</td><td>field</td><td>VerbatimTaxonomicName</td><td>String  </td></tr>
+<tr><td>Verbatim Taxonomic Name Reason</td><td>field</td><td>VerbatimTaxonomicNameReason</td><td><a href="VerbatimTaxonomicNameReason.html">VerbatimTaxonomicNameReason</a>  </td></tr>
+<tr><td>Wind</td><td>field</td><td>Wind</td><td>Int32  </td></tr>
+<tr><td>WKT</td><td>field</td><td>WKT</td><td>String  </td></tr>
+<tr><td>Year</td><td>field</td><td>Year</td><td>Int32  </td></tr>
+<tr><td>Year 1</td><td>field</td><td>Year1</td><td>Int32  </td></tr>
+<tr><td>Year Label</td><td>field</td><td>YearLabel</td><td>Int32  </td></tr>
+</table>
+</ul>
+
+
+<h4 id="detail-view-items">Detail View Items</h4>
+<ul>
+<table>
+<tr><td>Caption</td><td>Member Type</td><td>Member Name</td><td>Type</td><td>View Item Id</td></tr>
+<tr><td>Accession Ena</td><td>field</td><td>AccessionEna</td><td>String</td><td>AccessionEna</td></tr>
+<tr><td>Altitude From</td><td>field</td><td>AltitudeFrom</td><td><a href="LengthUnit.html">LengthUnit</a></td><td>AltitudeFrom</td></tr>
+<tr><td>Altitude Max M</td><td>field</td><td>AltitudeMaxM</td><td>Double</td><td>AltitudeMaxM</td></tr>
+<tr><td>Altitude Min M</td><td>field</td><td>AltitudeMinM</td><td>Double</td><td>AltitudeMinM</td></tr>
+<tr><td>Attachments</td><td>collection</td><td>Attachments</td><td><a href="Attachment.html">Attachment</a></td><td>Attachments</td></tr>
+<tr><td>Basis Of Record</td><td>field</td><td>BasisOfRecord</td><td><a href="BasisOfRecord.html">BasisOfRecord</a></td><td>BasisOfRecord</td></tr>
+<tr><td>Birth Date</td><td>field</td><td>BirthDate</td><td>DateTime</td><td>BirthDate</td></tr>
+<tr><td>Brood</td><td>field</td><td>Brood</td><td><a href="Brood.html">Brood</a></td><td>Brood</td></tr>
+<tr><td>Check CITES</td><td>field</td><td>CheckCITES</td><td>Boolean</td><td>CheckCITES</td></tr>
+<tr><td>CITES Controlled</td><td>field</td><td>CITESControlled</td><td>Boolean</td><td>CITESControlled</td></tr>
+<tr><td>CITES Current Listing</td><td>field</td><td>CITESCurrentListing</td><td><a href="CitesAppendix.html">CitesAppendix</a></td><td>CITESCurrentListing</td></tr>
+<tr><td>Collected By</td><td>field</td><td>CollectedBy</td><td>String</td><td>CollectedBy</td></tr>
+<tr><td>Collection Method</td><td>field</td><td>CollectionMethod</td><td>String</td><td>CollectionMethod</td></tr>
+<tr><td>Collection Number</td><td>field</td><td>CollectionNumber</td><td>String</td><td>CollectionNumber</td></tr>
+<tr><td>Collection Number Numeric</td><td>field</td><td>CollectionNumberNumeric</td><td>Int32</td><td>CollectionNumberNumeric</td></tr>
+<tr><td>Collection Objects</td><td>collection</td><td>CollectionObjects</td><td><a href="CollectionObject.html">CollectionObject</a></td><td>CollectionObjects</td></tr>
+<tr><td>Comment</td><td>field</td><td>Comment</td><td>String</td><td>Comment</td></tr>
+<tr><td>Consignments</td><td>collection</td><td>Consignments</td><td><a href="Consignment.html">Consignment</a></td><td>Consignments</td></tr>
+<tr><td>Co-occurring Species</td><td>field</td><td>CooccurringSpecies</td><td>String</td><td>CooccurringSpecies</td></tr>
+<tr><td>Coord Accuracy</td><td>field</td><td>CoordAccuracy</td><td>Int32</td><td>CoordAccuracy</td></tr>
+<tr><td>Coord From</td><td>field</td><td>CoordFrom</td><td><a href="CoordinatesUpdateFrom.html">CoordinatesUpdateFrom</a></td><td>CoordFrom</td></tr>
+<tr><td>Coordinate Uncertainty In Meters</td><td>field</td><td>CoordinateUncertaintyInMeters</td><td>Int32</td><td>CoordinateUncertaintyInMeters</td></tr>
+<tr><td>Coord Source</td><td>field</td><td>CoordSource</td><td>String</td><td>CoordSource</td></tr>
+<tr><td>Count</td><td>field</td><td>Count</td><td>Int32</td><td>Count</td></tr>
+<tr><td>Country ISO</td><td>field</td><td>CountryISO</td><td><a href="Country.html">Country</a></td><td>CountryISO</td></tr>
+<tr><td>Dataset</td><td>field</td><td>Dataset</td><td><a href="Dataset.html">Dataset</a></td><td>Dataset</td></tr>
+<tr><td>Date</td><td>field</td><td>Date</td><td>DateTime</td><td>Date</td></tr>
+<tr><td>Death Date</td><td>field</td><td>DeathDate</td><td>DateTime</td><td>DeathDate</td></tr>
+<tr><td>Diameter</td><td>field</td><td>Diameter</td><td>Double</td><td>Diameter</td></tr>
+<tr><td>EPSG</td><td>field</td><td>EPSG</td><td>Int32</td><td>EPSG</td></tr>
+<tr><td>First Division</td><td>field</td><td>FirstDivision</td><td>String</td><td>FirstDivision</td></tr>
+<tr><td>Genotype</td><td>field</td><td>Genotype</td><td><a href="Genotype.html">Genotype</a></td><td>Genotype</td></tr>
+<tr><td>Host</td><td>field</td><td>Host</td><td>String</td><td>Host</td></tr>
+<tr><td>Host Details</td><td>field</td><td>HostDetails</td><td>String</td><td>HostDetails</td></tr>
+<tr><td>Id</td><td>field</td><td>Id</td><td>String</td><td>Id</td></tr>
+Unique identifier for occurrence record. Used as a key when importing data.
+<tr><td>Identifications</td><td>collection</td><td>Identifications</td><td><a href="Identification.html">Identification</a></td><td>Identifications</td></tr>
+<tr><td>Identified By</td><td>field</td><td>IdentifiedBy</td><td>String</td><td>IdentifiedBy</td></tr>
+<tr><td>Identified On</td><td>field</td><td>IdentifiedOn</td><td>DateTime</td><td>IdentifiedOn</td></tr>
+<tr><td>Import Record Status</td><td>field</td><td>ImportRecordStatus</td><td><a href="ImportRecordStatus.html">ImportRecordStatus</a></td><td>ImportRecordStatus</td></tr>
+<tr><td>Individual</td><td>field</td><td>Individual</td><td><a href="Individual.html">Individual</a></td><td>Individual</td></tr>
+<tr><td>Is Brush Harvest</td><td>field</td><td>IsBrushHarvest</td><td>Boolean</td><td>IsBrushHarvest</td></tr>
+<tr><td>Is Dead</td><td>field</td><td>IsDead</td><td>Boolean</td><td>IsDead</td></tr>
+<tr><td>Latitude</td><td>field</td><td>Latitude</td><td>Double</td><td>Latitude</td></tr>
+<tr><td>Latitude String</td><td>field</td><td>LatitudeString</td><td>String</td><td>LatitudeString</td></tr>
+<tr><td>Latitude Verbatim</td><td>field</td><td>LatitudeVerbatim</td><td>String</td><td>LatitudeVerbatim</td></tr>
+<tr><td>Locality</td><td>field</td><td>Locality</td><td><a href="Locality.html">Locality</a></td><td>Locality</td></tr>
+<tr><td>Locality Description</td><td>field</td><td>LocalityDescription</td><td>String</td><td>LocalityDescription</td></tr>
+<tr><td>Longitude</td><td>field</td><td>Longitude</td><td>Double</td><td>Longitude</td></tr>
+<tr><td>Longitude String</td><td>field</td><td>LongitudeString</td><td>String</td><td>LongitudeString</td></tr>
+<tr><td>Longitude Verbatim</td><td>field</td><td>LongitudeVerbatim</td><td>String</td><td>LongitudeVerbatim</td></tr>
+<tr><td>Map Ref</td><td>field</td><td>MapRef</td><td>String</td><td>MapRef</td></tr>
+<tr><td>Map Source</td><td>field</td><td>MapSource</td><td><a href="Term.html">Term</a></td><td>MapSource</td></tr>
+<tr><td>Original Coordinate Format</td><td>field</td><td>OriginalCoordinateFormat</td><td><a href="OriginalCoordinateFormat.html">OriginalCoordinateFormat</a></td><td>OriginalCoordinateFormat</td></tr>
+<tr><td>Other Id</td><td>field</td><td>OtherId</td><td>String</td><td>OtherId</td></tr>
+<tr><td>Population</td><td>field</td><td>Population</td><td><a href="Population.html">Population</a></td><td>Population</td></tr>
+<tr><td>Project</td><td>field</td><td>Project</td><td><a href="Project.html">Project</a></td><td>Project</td></tr>
+<tr><td>Rain</td><td>field</td><td>Rain</td><td>Boolean</td><td>Rain</td></tr>
+<tr><td>Restrictions Not Inherited</td><td>field</td><td>RestrictionsNotInherited</td><td>Boolean</td><td>RestrictionsNotInherited</td></tr>
+<tr><td>Second Division</td><td>field</td><td>SecondDivision</td><td>String</td><td>SecondDivision</td></tr>
+<tr><td>Sex</td><td>field</td><td>Sex</td><td><a href="Sex.html">Sex</a></td><td>Sex</td></tr>
+<tr><td>Store</td><td>field</td><td>Store</td><td><a href="Store.html">Store</a></td><td>Store</td></tr>
+<tr><td>Sublocality</td><td>field</td><td>Sublocality</td><td><a href="Locality.html">Locality</a></td><td>Sublocality</td></tr>
+<tr><td>Taxonomic Name</td><td>field</td><td>TaxonomicName</td><td><a href="TaxonomicName.html">TaxonomicName</a></td><td>TaxonomicName</td></tr>
+<tr><td>Temp</td><td>field</td><td>Temp</td><td>Double</td><td>Temp</td></tr>
+<tr><td>Temporary Name</td><td>field</td><td>TemporaryName</td><td>String</td><td>TemporaryName</td></tr>
+<tr><td>Temporary Name Reason</td><td>field</td><td>TemporaryNameReason</td><td><a href="TemporaryNameReason.html">TemporaryNameReason</a></td><td>TemporaryNameReason</td></tr>
+<tr><td>WKT</td><td>field</td><td>WKT</td><td>String</td><td>WKT</td></tr>
+</table>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Copyright (c) 2006-2018 EarthCape OY. All rights reserved.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
