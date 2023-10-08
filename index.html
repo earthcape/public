@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title> | EarthCape Documentation </title>
+    <title>Selected Topics (full reference) | EarthCape Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content=" | EarthCape Documentation ">
+    <meta name="title" content="Selected Topics (full reference) | EarthCape Documentation ">
     <meta name="generator" content="docfx 2.57.2.0">
     
     <link rel="shortcut icon" href="favicon.ico">
@@ -60,9 +60,8 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
+<h3 id="selected-topics-full-referenceearthcapeindexmd">Selected Topics (<a href="earthcape/index.html">full reference</a>)</h3>
 
-<p><em>This documentation is under construction. It will be updated on a regular basis.</em></p>
-<h4 id="selected-topics-full-referenceearthcapeindexmd">Selected Topics (<a href="earthcape/index.html">full reference</a>)</h4>
 <ul>
 <li><a href="earthcape/databases.html">Supported databases</a></li>
 <li><a href="earthcape/dbstructure.html">Database structure</a></li>
@@ -83,14 +82,440 @@
 <li><a href="earthcape/bold.html">iBOL BOLD</a></li>
 <li><a href="earthcape/datapackage.html">Data Package</a> - <a href="https://frictionlessdata.io/docs/data-package/#tabular-data">frictionlessdata.io</a></li>
 </ul>
-<p><a href="https://devexpress.com">DevExpress</a> Components Reference</p>
+<h4 id="version-history">Version History</h4>
+<h2 id="232-18-aug-2023">23.2 (18 Aug 2023)</h2>
+<h3 id="locality--location-updates">Locality &amp; Location Updates</h3>
 <ul>
-<li><a href="win-ui/articles/index.html">Windows Elements</a></li>
-<li><a href="web-ui/articles/index.html">Web Elements</a></li>
+<li>Additional Locality Fields</li>
+<li>LocalityVisit multiple People link</li>
+<li>LocalityVisit.Rain</li>
+<li>LocalityVisit.TaxaCount, IndividualCount</li>
+<li>LocalityVisit.Url</li>
+<li>LocalityVisitTargetSpecies</li>
 </ul>
-<h4 id="whats-new">What&#39;s New</h4>
-<p>Version History</p>
-<p>21.8 28 Sep 2021</p>
+<h3 id="occurrence-updates--additions">Occurrence Updates &amp; Additions</h3>
+<ul>
+<li>Additional occurrence fields (brood, genotype, birthdate, deathdate)</li>
+<li>Occurrence.CurrentIdentification update fix</li>
+<li>Occurrence.Diameter</li>
+<li>Occurrence.Rain</li>
+<li>Occurrence.Temp</li>
+<li>Occurrence.Store</li>
+<li>Occurrence.Sublocality</li>
+<li>Occurrence.VerificationStatus on autocreate disabled</li>
+</ul>
+<h3 id="seed--storage-calculations-fixes">Seed &amp; Storage Calculations Fixes</h3>
+<ul>
+<li>Seed cryo calculations</li>
+<li>Seed quantity calculations fixes</li>
+<li>Seed Storage Allocation calculations redesign</li>
+<li>Seed storage divider calculations fixed</li>
+<li>Seed viability test calculations fix</li>
+<li>Task SeedQuantity DateCompleted setting fixed</li>
+</ul>
+<h3 id="documentation--reporting">Documentation &amp; Reporting</h3>
+<ul>
+<li>Docs generation, Docs generation fixes</li>
+<li>Report copies printing speed fixed</li>
+<li>Report multiple copies for collection object store</li>
+</ul>
+<h3 id="model--data-adjustments">Model &amp; Data Adjustments</h3>
+<ul>
+<li>New entity: Individual</li>
+<li>Organization.EORINumber</li>
+<li>Person identifier model</li>
+<li>Resource, ResourceIdentifier, ResourceIdentifierPerson</li>
+<li>Sex enum extended with Queen, Worker</li>
+<li>TaxonomicName.SeedShortLived</li>
+<li>TaxonomicNameList</li>
+<li>TemperatureRegime.AfterRipening added</li>
+</ul>
+<h3 id="system--technical-adjustments">System &amp; Technical Adjustments</h3>
+<ul>
+<li>Blazor anonymous login</li>
+<li>Query builder improvements, grid options, exporting</li>
+<li>SQL datasource timeout</li>
+</ul>
+<h3 id="miscellaneous">Miscellaneous</h3>
+<ul>
+<li>Checklist model, CheckListItem log fields</li>
+<li>Easytest config</li>
+<li>GBIF checklist, GBIF publish fixes for occurrence</li>
+<li>GBIF publishing fixes, GBIF publishing: checklist</li>
+<li>ISS, ISS removed</li>
+<li>ListView data access mode UI switch</li>
+<li>Store collection objects stores aggregated removed</li>
+<li>Store container counting tweak</li>
+<li>Store.DisplayName update optimized</li>
+<li>Store.UpdateDisplayName returned</li>
+<li>Transaction object count fixed</li>
+<li>Transaction.Purpose assignment from Transfer fixed</li>
+<li>Transfer and Transaction Purpose Other appearance rule fixed</li>
+</ul>
+<h2 id="231-19-mar-2023">23.1 (19 Mar 2023)</h2>
+<h3 id="collection-objects">Collection Objects</h3>
+<ul>
+<li>CollectionObject Active, Cryo, Base locations calculated fields added</li>
+<li>CollectionObject LastAcceptedTest</li>
+<li>CollectionObject null ref check</li>
+<li>CollectionObject seed sampling quantities limits settings added</li>
+<li>CollectionObject viability test prohibited warning</li>
+<li>CollectionObject.GermplasmType (Term)</li>
+<li>CollectionObject.IsQuarantined inheritance</li>
+<li>CollectionObject.NumberOfSamples .ParentConsignment</li>
+<li>CollectionObject.OriginalDateStored (calculated from CollectionObjectStore.Date)</li>
+<li>CollectionObject.OtherId1</li>
+<li>CollectionObject.OtherId2</li>
+<li>CollectionObject.RemovedFromActiveManagement fields</li>
+<li>CollectionObject saving optimization</li>
+<li>CollectionObject.UpdateThumbnail check for empty is added</li>
+<li>CollectionObject.ViabilityTest special handling on save</li>
+<li>CollectionObject: CultivatedCollector, CultivatedOrganization fields added</li>
+<li>CollectionObjectBatch.Collection</li>
+<li>CollectionObjectStore.Date</li>
+<li>CollectionObjectStore validation and free space calculation</li>
+<li>CollectionObjectStore.IsEmpty and simpleAction_EmptyStore</li>
+</ul>
+<h3 id="consignment-updates">Consignment Updates</h3>
+<ul>
+<li>Additional Consignment fields</li>
+<li>Consignment model fixed</li>
+<li>Consignment restriction inheritance</li>
+<li>Consignment saving/refreshing when child collection object is created</li>
+<li>Consignment total item count</li>
+<li>Consignment.LegalOwner assignment</li>
+<li>Consignment,AquisitionType, LegalOwner</li>
+<li>Copy department from consignment</li>
+</ul>
+<h3 id="viability-tests">Viability Tests</h3>
+<ul>
+<li>Viability Test delete replicates confirmation message</li>
+<li>Viability test replicate validation</li>
+<li>Viability test speed improvement</li>
+<li>Viability test: default replicate creation and handling</li>
+<li>ViabilityTest calculations</li>
+<li>ViabilityTest passfail</li>
+<li>ViabilityTest replicate setup</li>
+<li>ViabilityTest treatments and timepoint</li>
+<li>ViabilityTest validation improved</li>
+</ul>
+<h3 id="transaction-collection-objects">Transaction Collection Objects</h3>
+<ul>
+<li>Transaction CollectionObjects validation</li>
+<li>TransactionCollectionObject cloning</li>
+<li>TransactionCollectionObject nested listview records validation</li>
+<li>TransactionCollectionObject noncloneable fields</li>
+<li>TransactionCollectionObject Quantity AppearanceRule</li>
+<li>TransactionCollectionObject seed fields</li>
+<li>TransactionCollectionObject.Date autofill</li>
+</ul>
+<h3 id="seed-calculations-and-tasks">Seed Calculations and Tasks</h3>
+<ul>
+<li>Seed calculations</li>
+<li>Seed counting fields interaction</li>
+<li>Seed object store</li>
+<li>Seed quantity warnings</li>
+<li>Seed store suggest</li>
+</ul>
+<h3 id="miscellaneous-1">Miscellaneous</h3>
+<ul>
+<li>Web Client Mapping</li>
+<li>Additional restrictions</li>
+<li>Availability Status - Update When Original Date Stored Populated</li>
+<li>Bionomia</li>
+<li>Calculations.CalculateSentAmount</li>
+<li>CustomEditorAliases</li>
+<li>DataSource builder (renamed from Query)</li>
+<li>Department, address autofill for Transfer, Transaction</li>
+<li>Design Child Storage</li>
+<li>Diagram</li>
+<li>Docs generation</li>
+<li>Duplicate.Store</li>
+<li>EarthCapeManager application</li>
+<li>Enum TransactionPurpose.Conservation added</li>
+<li>Species+</li>
+<li>GBIF publishing working for occurrence and images</li>
+<li>GIS, Win MapProject saving when closing map window</li>
+<li>Importer Beta module added</li>
+<li>ImportData action added back to win project as an additional import option</li>
+<li>InternalTransfer: Transaction</li>
+<li>Lab model</li>
+<li>LastBestTest</li>
+<li>Logistics view models</li>
+<li>MapControl speed up</li>
+<li>Multi Storage improvements</li>
+<li>New object dropdown removed lab objects</li>
+<li>New object list edited</li>
+<li>Organization.Department</li>
+<li>Poisonous warning on consignment</li>
+<li>Query builder test</li>
+<li>Query builder</li>
+<li>Query builder results grid</li>
+<li>Query Builder settings controlled table and column list</li>
+<li>Restrictions appearance rules</li>
+<li>RestrictionType1 updated</li>
+<li>Settings.TaskDateCompleted for all task subtypes</li>
+<li>Task duration defaults</li>
+<li>Task duration options</li>
+<li>Task end date</li>
+<li>Task navigation model</li>
+<li>Task StartDate and Date Completed auto fill and settings</li>
+<li>Task temp av, min, max fields added</li>
+<li>Transaction and Transfer AssignedToUser2</li>
+<li>Transaction.Type</li>
+<li>Vernacular names</li>
+<li>WebAPI objects</li>
+<li>Win encrypt config connection string</li>
+<li>Win Gantt Editor test</li>
+<li>Zenodo publishing (collection object)</li>
+</ul>
+<h2 id="223-13-jun-2022">22.3 (13 Jun 2022)</h2>
+<h3 id="collection-objects--sequences">Collection Objects &amp; Sequences</h3>
+<ul>
+<li>Collection.Order</li>
+<li>CollectionObject. Sequences</li>
+<li>CollectionObject.Sequences and Sequence fields, sequence related objects</li>
+<li>CollectionObject id generation</li>
+<li>CollectionObject Importer properties: ImportedUpdateBy, ImportedUpdateOn, UpdatedByImport, ImportedBy, ImportedOn, CreatedByImport</li>
+<li>CollectionObjectDamage.FungalContamination</li>
+<li>CollectionObject.HasSporePrint</li>
+<li>Collection Object Save and CLose, Save and New handling</li>
+<li>Sequence fields</li>
+<li>Sequence - CollectionObject associations</li>
+<li>Sequence.DDBJ</li>
+<li>Sequence and win editors for repositories links, BOLD, ENA, GenBank, Unite</li>
+</ul>
+<h3 id="occurrence-details--adjustments">Occurrence Details &amp; Adjustments</h3>
+<ul>
+<li>Occurrence.SubstrateText</li>
+<li>Occurrence.Restrictions</li>
+<li>Occurrence import field attributes</li>
+<li>Occurrence/Identification.TaxonomicNameId</li>
+<li>Occurrence.PublicComment</li>
+<li>Occurrence.Substrate</li>
+<li>Occurrence.LabelText size unlimited</li>
+<li>Occurrence: Pick Substrate and other Name fields</li>
+</ul>
+<h3 id="identification-fixes-and-adjustments">Identification Fixes and Adjustments</h3>
+<ul>
+<li>Identification.CollectionObjectInspected -&gt; occurrence fix</li>
+<li>Identification.DetailView Occurrence added</li>
+<li>Identification.Occurrence populate from CollectionObjectInspected</li>
+<li>Identification.IsOriginal</li>
+</ul>
+<h3 id="importer-adjustments">Importer Adjustments</h3>
+<ul>
+<li>General fixes</li>
+<li>Ignore duplicates option</li>
+<li>SpreadsheetImport.Errors added to import snapshot</li>
+<li>fixing populating keys</li>
+<li>Coordinates recalculation on import</li>
+<li>Multiple records error message</li>
+<li>Cell change light blue</li>
+<li>AvailableFields adds occurrence if collection object</li>
+<li>multiple handling improved</li>
+<li>SelectFromDuplicates action added</li>
+</ul>
+<h3 id="transactioncollectionobject-adjustments">TransactionCollectionObject Adjustments</h3>
+<ul>
+<li>TransactionCollectionObject Find Items</li>
+<li>TransactionCollectionObject non cloneable fields</li>
+<li>TransactionCollectionObject controller adjustment</li>
+<li>TransactionCollectionObject made clonable</li>
+<li>TransactionCollectionObject Set Status TargetViewSetting=Nested</li>
+<li>TransactionCollectionObject view added to navigation</li>
+</ul>
+<h3 id="miscellaneous-adjustments-and-additions">Miscellaneous Adjustments and Additions</h3>
+<ul>
+<li>Net 6 migration</li>
+<li>New entity: LifeStage, Occurrence.LifeStage</li>
+<li>Model: listview reset filter for lookups</li>
+<li>TemporaryNameReason.AwaitingImport added</li>
+<li>ExColl.Person</li>
+<li>Transfer.ReceiptAckDate</li>
+<li>TransactionDueDateExtension update</li>
+<li>Document update Country from org</li>
+<li>SpecialCharacters model</li>
+<li>SpecialCharacters form as separate window</li>
+<li>Win MapWindow pushpin re-center on update</li>
+<li>LocalityVisit model</li>
+<li>LocalityVisit Consignments, Documents</li>
+<li>Filter by list, add objects verify</li>
+<li>SpecimenType.Allotype added</li>
+<li>Substrate model</li>
+<li>Substrate, SubstrateQualifier</li>
+<li>Term, ObjectQuality log fields missing</li>
+<li>GBIF lookup taxonomy, settings. GBIFDefaultDataset</li>
+<li>Win: value mouse wheel removed from TextEdit</li>
+<li>TaxonomicName fields visibility</li>
+<li>LoanReturn small adjustment</li>
+<li>Party.FirstAddress editable</li>
+<li>AD user creation</li>
+<li>CurrentObject fix for InstantFeedbackView</li>
+<li>Updater, admin user creation</li>
+<li>Model, Rule ConsignmentExchangeAgreementMissingWarning</li>
+<li>Model TransactionCollectionObject_listview</li>
+<li>Model: PostalCourierService</li>
+<li>Model: Identification list view</li>
+<li>Transfer Assign user only for shipment</li>
+<li>Type designations remove - update object</li>
+</ul>
+<h2 id="222-09-mar-2022">22.2 (09 Mar 2022)</h2>
+<ul>
+<li>new web client (blazor)</li>
+<li>new api client (webapi) </li>
+<li>CollectionObject LegalOwner settings,OwnOrganization null check emeyke </li>
+<li></li>
+</ul>
+<h2 id="221-22-feb-2022">22.1 (22 Feb 2022)</h2>
+<h3 id="transaction-adjustments--fixes">Transaction Adjustments &amp; Fixes</h3>
+<ul>
+<li>Transaction New action list fixed</li>
+<li>TransactionCollectionObject.Status SetStatus action list fixed</li>
+<li>Transaction item count calculation fixed for Donation</li>
+<li>Transaction item count excludes cancelled and rejected</li>
+<li>Transaction updates</li>
+<li>TransactionCollectionObject.Transfers -&gt; Aggregated</li>
+<li>TransactionCollectionObject.MultipleCountries</li>
+<li>TransactionCollectionObject.CountryUnknown=true by default</li>
+<li>TransactionCollectionObject.Status enhancement (lost, returned)</li>
+<li>TransactionCollectionObject.Identifiers</li>
+<li>TransactionStatus.Recalled DispatchType.Email</li>
+<li>TransactionPurpose.ReturnToOwner</li>
+<li>TransactionDueDateExtension auto-update</li>
+<li>Transaction Return polishing</li>
+<li>Transaction Due date extension</li>
+<li>Transactions and Transfers improvements</li>
+<li>Transfer Items Count for Acquisitions and Incoming Borrows</li>
+<li>Transfer.Direction</li>
+<li>TransferPackage.CalcVolumetricWeight fix</li>
+<li>New TransferTransactionObject</li>
+<li>Borrow from Transfer fix</li>
+<li>DueDateExtensionStatus</li>
+</ul>
+<h3 id="occurrence-adjustments--updates">Occurrence Adjustments &amp; Updates</h3>
+<ul>
+<li>Occurrence Update Restrictions</li>
+<li>Occurrence.Tdwg lookups</li>
+<li>Occurrence TDWG levels refresh and logic</li>
+<li>Occurrence.Reference/Dataset/RecordSets added</li>
+<li>Occurrence.AttachmentCount</li>
+<li>Occurrence restrictions inheritance</li>
+</ul>
+<h3 id="collectionobject-adjustments--fixes">CollectionObject Adjustments &amp; Fixes</h3>
+<ul>
+<li>CollectionObject.Occurrence.Date partial date formatting fixed</li>
+<li>CollectionObject.AvailabilityStatus-&gt;DisposedDonated if in Donation</li>
+<li>CollectionObject.AvailabilityStatus update from TransactionCollectionObject</li>
+<li>CollectionObject.ContainerVolume</li>
+</ul>
+<h3 id="reporting-adjustments">Reporting Adjustments</h3>
+<ul>
+<li>Multiple copies print fix</li>
+<li>Multiple copies report print fix</li>
+<li>Report save document name</li>
+<li>Report.Team</li>
+</ul>
+<h3 id="person--organization-adjustments">Person &amp; Organization Adjustments</h3>
+<ul>
+<li>Person org dependent lookups</li>
+<li>Person lookup list view filter by org</li>
+<li>Organization-Person autofill fixed</li>
+</ul>
+<h3 id="miscellaneous-adjustments--fixes">Miscellaneous Adjustments &amp; Fixes</h3>
+<ul>
+<li>Display users with access action disabled by default</li>
+<li>Display user roles</li>
+<li>ConsignmentDisposal.Destroyed added</li>
+<li>Min, Max values model extension</li>
+<li>PostalAddress text line fix</li>
+<li>Grid Export text, CSV Unicode</li>
+<li>Spreadhseet datatype autofill</li>
+<li>MDO list view config</li>
+<li>Return functionality adjustments</li>
+</ul>
+<h2 id="220-10-jan-2022">22.0 (10 Jan 2022)</h2>
+<h3 id="transaction-adjustments--improvements">Transaction Adjustments &amp; Improvements</h3>
+<ul>
+<li>Transaction loan workflow and calculations</li>
+<li>Transaction, consignment, shipment additional fields</li>
+<li>TransactionRequestorType</li>
+<li>TransactionPurpose extended</li>
+<li>TransactionFamily</li>
+<li>Transaction item count</li>
+<li>Transaction data sheet</li>
+<li>TransactionCountries and Families</li>
+<li>TransactionDocuments and attachments</li>
+<li>Handle empty transaction objects as acquisitions</li>
+<li>Make return from within transaction objects via consignment</li>
+<li>Transactions/Transfers improvement</li>
+<li>Transfer packages count fix</li>
+<li>Transfer returns</li>
+<li>Settings add option for common id generator for transfers and transactions</li>
+<li>Consignment and Shipment are now Transfer subclasses</li>
+<li>Consignment restrictions approval</li>
+<li>Consignment restrictions inheritance</li>
+<li>Consignment Documents</li>
+<li>Consignment fields</li>
+<li>Team Consignment batch</li>
+<li>Team transactions</li>
+<li>State machine enabled</li>
+<li>State machine PDF generation</li>
+</ul>
+<h3 id="collectionobject-adjustments">CollectionObject Adjustments</h3>
+<ul>
+<li>CollectionObject.ObjectCount</li>
+<li>CollectionObjectBatch fields</li>
+<li>CollectionObject remember values for Accession and Availability status and preparation method</li>
+<li>CollectionObject Legal Owner Country fixed</li>
+<li>ColectionObject Loan status update</li>
+</ul>
+<h3 id="occurrence-adjustments--updates-1">Occurrence Adjustments &amp; Updates</h3>
+<ul>
+<li>Occurrence restrictions inheritance</li>
+<li>Occurrence LatLong rules</li>
+<li>Occurrence.CITESControlled</li>
+<li>TDWG geography on occurrence</li>
+<li>TDWG autofill</li>
+</ul>
+<h3 id="logistics--shipping-adjustments">Logistics &amp; Shipping Adjustments</h3>
+<ul>
+<li>Logistics improvements</li>
+<li>Document generation</li>
+<li>LoanReturn barcode scanning automation</li>
+<li>Shipment autofill organization and address when created from transaction</li>
+<li>Shipment dimensions and volumetric weight</li>
+<li>Shipment packages calculations fixed</li>
+</ul>
+<h3 id="document--reporting-adjustments">Document &amp; Reporting Adjustments</h3>
+<ul>
+<li>DocumentType</li>
+<li>DocumentStorage object</li>
+<li>Win Report preview can save document as PDF to object</li>
+<li>Print Multiple report copies (win)</li>
+<li>State machine report</li>
+</ul>
+<h3 id="personnel--organization-adjustments">Personnel &amp; Organization Adjustments</h3>
+<ul>
+<li>JobTitle object</li>
+<li>Organization.Attention</li>
+<li>Teams and TeamUsers</li>
+<li>PostalAddress fields adjustments</li>
+<li>PostalAddress formatting</li>
+<li>PostalCourier and PostalCourierService</li>
+</ul>
+<h3 id="miscellaneous-adjustments--fixes-1">Miscellaneous Adjustments &amp; Fixes</h3>
+<ul>
+<li>AD TEST installer</li>
+<li>CITES fields</li>
+<li>Donation and Sample transactions</li>
+<li>Permit object added</li>
+<li>TypeDesignation hierarchy</li>
+<li>Loan additional fields</li>
+<li>Settings.OwnOrganization</li>
+<li>Importer ProjectObject auto association (Spreadsheet.Project)</li>
+</ul>
+<h2 id="218-28-sep-2021">21.8 (28 Sep 2021)</h2>
 <ul>
 <li>CollectionObject and Occurrence to replace Unit</li>
 <li>CollectionObject, Occurrence, Consignment restrictions</li>
@@ -113,7 +538,7 @@
 <li>Connection string encryption</li>
 <li>Separate installer for EasyTest client deployment</li>
 </ul>
-<p>21.7 31 Jan 2021</p>
+<h2 id="217-31-jan-2021">21.7 (31 Jan 2021)</h2>
 <ul>
 <li>Build pipeline improvements</li>
 <li>Organization-Project links</li>
@@ -122,7 +547,7 @@
 <li>Active Directory Win Client dedicated installer</li>
 <li>Spreadsheet improvements</li>
 </ul>
-<p>20.5(6) 14 Nov 2020</p>
+<h2 id="2056-14-nov-2020">20.5(6) (14 Nov 2020)</h2>
 <ul>
 <li>Middle tier application (Application Server)</li>
 <li>Import Spreadhseet</li>
@@ -132,7 +557,7 @@
 <li>Core libraries updates</li>
 <li>Bug fixes</li>
 </ul>
-<p>20.4 23 Apr 2020</p>
+<h2 id="204-23-apr-2020">20.4 (23 Apr 2020)</h2>
 <ul>
 <li>TaxonDistribution</li>
 <li>DataPackage export metadata extended</li>
@@ -140,7 +565,7 @@
 <li>Zenodo publish speciment (experimental)</li>
 <li>LocalityVisit fields added</li>
 </ul>
-<p>Version 20.3 (02 Mar 2020)</p>
+<h2 id="203-02-mar-2020">20.3 (02 Mar 2020)</h2>
 <ul>
 <li>Web map: coloured Unit pins by UnitType</li>
 <li>Web forms: grid lookup dropdowns</li>
@@ -148,12 +573,12 @@
 <li>Win: UnitTask Gantt view</li>
 <li>People: Import VCF (Win only)</li>
 </ul>
-<p>Version 20.1.4 (10 Feb 2020)</p>
+<h2 id="2014-10-feb-2020">20.1.4 (10 Feb 2020)</h2>
 <ul>
 <li>Zenodo file upload: improved reference and metadata</li>
 <li>Dataset specific view management: autolink new unit to current dataset</li>
 </ul>
-<p>Version 20.1.2 (31 Jan 2020)</p>
+<h2 id="2012-31-jan-2020">20.1.2 (31 Jan 2020)</h2>
 <ul>
 <li>Win Client:<ul>
 <li>preliminary <a href="https://frictionlessdata.io/docs/tabular-data-package/">data package</a> export</li>
@@ -173,13 +598,13 @@
 </ul>
 </li>
 </ul>
-<p>Version 18.3.2 (29 Oct 2019)</p>
+<h2 id="1832-29-oct-2019">18.3.2 (29 Oct 2019)</h2>
 <ul>
 <li><a href="earthcape/gbif.html">GBIF</a> Occurrence download for TaxonomicName</li>
 <li><a href="earthcape/gbif.html">GBIF</a> Occurrence download for Dataset</li>
 <li><a href="earthcape/inat.html">INaturalist</a> observation upload</li>
 </ul>
-<p>Version 18.3.1 (30 Sep 2019)</p>
+<h2 id="1831-30-sep-2019">18.3.1 (30 Sep 2019)</h2>
 <ul>
 <li>Project <a href="https://www.gbif.org/grscicoll">GrSciColl</a> download from GBIF</li>
 <li><a href="http://www.boldsystems.org">BOLD</a> record download (beta)</li>
@@ -189,7 +614,7 @@
 <li>Win Client list view horizontal scrolling enabled</li>
 <li>Generating dataset specific unit views depending on used fields (beta) </li>
 </ul>
-<p>Version 18.3.0 (11 Sep 2019)</p>
+<h2 id="1830-11-sep-2019">18.3.0 (11 Sep 2019)</h2>
 <ul>
 <li>GBIF publishing via Zenodo</li>
 <li>INaturalist download individual units by INatId</li>
@@ -213,82 +638,25 @@
 <li>Fixed: Unit Attachment filter list</li>
 <li>Fixed: Unit impossible to clear date field</li>
 </ul>
-<h4 id="application-reference">Application Reference</h4>
-<ul>
-<li><a href="application/Project.html">Projects</a></li>
-<li><a href="application/Dataset.html">Datasets</a></li>
-<li><a href="application/Species.html">Species</a></li>
-<li><a href="application/Unit.html">Units</a></li>
-<li><a href="application/Locality.html">Localities</a></li>
-<li><a href="application/Brood.html">Broods</a></li>
-<li><a href="application/RecordSet.html">Record sets</a></li>
-<li><a href="application/Reference.html">References</a></li>
-<li><a href="application/UnitAttachment.md">Sample images</a></li>
-<li><a href="application/Attachment.html">Attachments</a></li>
-<li><a href="application/Sequencing.html">Sequencing</a></li>
-<li><a href="application/Family.html">Family</a></li>
-<li><a href="application/Genus.html">Genus</a></li>
-<li><a href="application/HigherTaxon.html">Higher taxa</a></li>
-<li><a href="application/Synonymy.html">Synonymy</a></li>
-<li><a href="application/TaxonomicName.html">Taxonomic names</a></li>
-<li><a href="application/LocalityVisit.html">Locality visit</a></li>
-<li><a href="application/MapProject.html">Map project</a></li>
-<li><a href="application/Locality.html">Administrative</a></li>
-<li><a href="application/DnaExtract.html">DNA extracts</a></li>
-<li><a href="application/ProtocolPCR.html">PCR protocols</a></li>
-<li><a href="application/Store.html">Store</a></li>
-<li><a href="application/Amplification.html">PCR runs</a></li>
-<li><a href="application/PcrDnaExtract.html">PCR products</a></li>
-<li><a href="application/SequencingRun.html">Sequencing runs</a></li>
-<li><a href="application/PcrDnaExtractSequenced.html">Sequencing results</a></li>
-<li><a href="application/Gene.html">Genes</a></li>
-<li><a href="application/Primer.html">Primers</a></li>
-<li><a href="application/Sequencing.html">Sequencing</a></li>
-<li><a href="application/EmailTemplate.md">Email templates</a></li>
-<li><a href="application/ExcelImport.md">Excel Import</a></li>
-<li><a href="application/ModelDifferenceObject.html">App model</a></li>
-<li><a href="application/SerializationConfigurationGroup.html">IO configuration</a></li>
-<li><a href="application/Project.html">Projects</a></li>
-<li><a href="application/PersonCore.md">People</a></li>
-<li><a href="application/ProjectContact.html">Project contacts</a></li>
-<li><a href="application/ProjectEvent.md">Project Events</a></li>
-<li><a href="application/DatasetContribution.html">Dataset Contribution</a></li>
-<li><a href="application/EmailTemplate.md">Email templates</a></li>
-<li><a href="application/Store.html">Store</a></li>
-<li><a href="application/Habitat.html">Habitats</a></li>
-<li><a href="application/ProjectEvent.md">Calendar</a></li>
-<li><a href="application/PersonalTask.md">Tasks</a></li>
-<li><a href="application/License.md">Licenses</a></li>
-<li><a href="application/XpandPermissionPolicyRole.html">Roles</a></li>
-<li><a href="application/XpandPermissionPolicyUser.html">Users</a></li>
-<li><a href="application/DashboardDefinition.html">Dashboard Definitions</a></li>
-<li><a href="application/ReportDataV2.html">Reports</a></li>
-</ul>
-<h4 id="earthcape-ui-elements">EarthCape UI Elements:</h4>
-<ul>
-<li><a href="win-ui/articles/index.html">Windows UI</a></li>
-<li><a href="web-ui/articles/index.html">Web UI</a></li>
-</ul>
-<h4 id="update-log">Update log</h4>
-<p>Version 18.2.7121 (1 July 2019)</p>
+<h2 id="1827121-1-july-2019">18.2.7121 (1 July 2019)</h2>
 <ul>
 <li><strong><span style="color: #99cc00;">New</span></strong>: GBIF dataset publishing from both platforms.</li>
 <li><strong><span style="color: #99cc00;">New</span></strong>: DwC-A export</li>
 </ul>
-<p>Version 18.2.7101 (18 June 2019)</p>
+<h2 id="1827101-18-june-2019">18.2.7101 (18 June 2019)</h2>
 <ul>
 <li><strong><span style="color: #99cc00;">New</span></strong>: Win: Rich Text Mail Merge Templates.</li>
 <li><strong><span style="color: #99cc00;">Updated</span></strong>: Material Transfers (loans, gifts, exchanges)</li>
 <li><strong><span style="color: #99cc00;">Updated</span></strong>: Material Accessions/Deaccessions</li>
 </ul>
-<p>Version 18.2.7091 (6 June 2019)</p>
+<h2 id="1827091-6-june-2019">18.2.7091 (6 June 2019)</h2>
 <ul>
 <li><strong><span style="color: #99cc00;">New</span></strong>: Win: <a href="earthcape/gbif.html">Darwin Core Archive export</a> test version.</li>
 <li><strong><span style="color: #99cc00;">New</span></strong>: Lab: DnaExtract.StorePosition. </li>
 <li><span style="color: #ff0000;"><strong>Fixed</strong></span>: Win: KML export fix.</li>
 <li>Attachment logic reworked.</li>
 </ul>
-<p>Version 18.2.7071 (12 May 2019)</p>
+<h2 id="1827071-12-may-2019">18.2.7071 (12 May 2019)</h2>
 <ul>
 <li>Lab: information messages when dna extracts created for selected units.</li>
 <li>Lab: information messages when dna extracts added to a PCR run.</li>
@@ -299,7 +667,7 @@
 <li><strong><span style="color: #99cc00;">New</span></strong>: Win mapping: new map control (beta) that uses tiles from Open Street Maps and Bing as background. </li>
 <li><span style="color: #ff0000;"><strong>Fixed</strong></span>: CreatedBy, CreatedOn, LastModifiedBy, LastModifiedOn are not updated in certain situations</li>
 </ul>
-<p>Version 18.2.7045 (16 April 2019)</p>
+<h2 id="1827045-16-april-2019">18.2.7045 (16 April 2019)</h2>
 <ul>
 <li><strong><span style="color: #99cc00;">New</span></strong>: Device and DeviceMeasurement objects </li>
 <li><strong><span style="color: #99cc00;">New</span></strong>: Lab: SequencingRun/Arrange Plate command creates well labels for sequencing lab submission sheet</li>
@@ -313,10 +681,10 @@
 <li><span style="color: #ff0000;"><strong>Fixed</strong></span>: Win/Lab:PCR run lab book word page displayed empty under certain conditions</li>
 <li><span style="color: #ff0000;"><strong>Fixed</strong></span>: Lab: DNAExtract default property set to Code (required by excel importer)</li>
 <li><span style="color: #ff0000;"><strong>Fixed</strong></span>: Win/Lab: PCR runs list takes long time to load</li>
-<li>Removed preventing application of older version run on a newer database</li>
+<li>Removed preventing application of older ## run on a newer database</li>
 <li>SQLite database configured as default for Windows Client</li>
 </ul>
-<p>Version 18.2.6955 (15 January 2019)</p>
+<h2 id="1826955-15-january-2019">18.2.6955 (15 January 2019)</h2>
 <ul>
 <li><strong><span style="color: #99cc00;">New</span></strong>: Draft Win Client documentation</li>
 <li><strong><span style="color: #99cc00;">New</span></strong>: Skins and svg icons in Windows Client</li>
@@ -441,7 +809,7 @@
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>
-            Copyright (c) 2006-2018 EarthCape OY. All rights reserved.
+            Copyright (c) 2006-2023 EarthCape OY. All rights reserved.
             
           </div>
         </div>
